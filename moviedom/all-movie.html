@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- lightcase css -->
+    <link rel="stylesheet" href="assets/css/lightcase.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- font css -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <!-- custom -->
+    <link rel="stylesheet" href="assets/sass/style.css" />
+
+    <title>Moviedom</title>
+  </head>
+
+  <body>
+    <!-- preloading -->
+    <div id="preloader">
+      <img
+        class="logo"
+        src="assets/images/logo/logo.png"
+        alt=""
+        width="119"
+        height="58"
+      />
+      <div id="status">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- end of preloading -->
+
+    <!-- header area start -->
+    <header>
+      <div class="header-sticky">
+        <div class="theme-container">
+          <div class="header-item">
+            <div class="logo-area">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="assets/images/logo/logo.png" alt="logo-image" />
+                </a>
+              </div>
+              <div class="main-menu">
+                <ul class="menu-list">
+                  <li><a href="all-movie.html">Movies</a></li>
+                  <li>
+                    <a href="#0" class="active">Genre</a>
+                    <div class="sub-menu">
+                      <ul class="sub-list genre" id="myDIV">
+                        <li><a class="" href="#0">Action</a></li>
+                        <li><a href="#0">Adventure</a></li>
+                        <li><a href="#0">Animation</a></li>
+                        <li><a href="#0">Biography</a></li>
+                        <li><a href="#0">Costume</a></li>
+                        <li><a href="#0">Comedy</a></li>
+                        <li><a href="#0">Crime</a></li>
+                        <li><a href="#0">Documentary</a></li>
+                        <li><a href="#0">Drama</a></li>
+                        <li><a href="#0">Family</a></li>
+                        <li><a href="#0">Fantasy</a></li>
+                        <li><a href="#0">Game-Show</a></li>
+                        <li><a href="#0">History</a></li>
+                        <li><a href="#0">Horror</a></li>
+                        <li><a href="#0">Kungfu</a></li>
+                        <li><a href="#0">Music</a></li>
+                        <li><a href="#0">Mystery</a></li>
+                        <li><a href="#0">Reality-TV</a></li>
+                        <li><a href="#0">Romance</a></li>
+                        <li><a href="#0">Sci-Fi</a></li>
+                        <li><a href="#0">Sport</a></li>
+                        <li><a href="#0">Thriller</a></li>
+                        <li><a href="#0">TV Show</a></li>
+                        <li><a href="#0">War</a></li>
+                        <li><a href="#0">Western</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">Country</a></li>
+                  <li><a href="#0">Tv Series</a></li>
+                  <li><a href="#0">Games</a></li>
+                  <li><a href="#0">Software</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="user-item">
+              <div class="item-list">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-target="#login"
+                  data-bs-toggle="modal"
+                >
+                  <span>Login</span>
+                </button>
+                <button type="button" class="search-bar">
+                  <i class="fa fa-search"></i>
+                </button>
+                <div class="search-input">
+                  <div class="search-input-icon">
+                    <i class="fa fa-search info"></i>
+                  </div>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Explore Info..."
+                    tabindex="-1"
+                    data-search="template-list"
+                  />
+                  <div class="search-input-close">
+                    <i class="fa fa-times"></i>
+                  </div>
+                  <ul class="search-list search-list-main"></ul>
+                </div>
+                <button type="button" class="movie-sliderBtn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="movie-sidebar">
+                  <div class="sidebar-title">
+                    <h4>New Filims</h4>
+                    <button type="button" id="croseBtn">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                  <ul class="sidebar-menulist" id="accordionExample">
+                    <li id="headingOne">
+                      <a
+                        href="#collapseOne"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                        >Home</a
+                      >
+                      <div
+                        id="collapseOne"
+                        class="collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="movie.html">Movies</a></li>
+                          <li><a href="all-movie.html">All Movies</a></li>
+                          <li><a href="profile.html">Profile</a></li>
+                          <li><a href="preference.html">Preference</a></li>
+                          <li><a href="tv-serial.html">TV Show</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">About</a></li>
+                    <li id="headingTwo">
+                      <a
+                        href="#collapseTwo"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                        >Blogs</a
+                      >
+                      <div
+                        id="collapseTwo"
+                        class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="#0">Item One</a></li>
+                          <li><a href="#0">Lord of</a></li>
+                          <li><a href="#0">Item Three</a></li>
+                          <li><a href="#0">Item Four</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">New Filims</a></li>
+                    <li><a href="#0">Old Filims</a></li>
+                    <li id="headingThree">
+                      <a
+                        href="#collapseThree"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                        >Upcoming Movies</a
+                      >
+                      <div
+                        id="collapseThree"
+                        class="collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="#0">Jhon Wick</a></li>
+                          <li><a href="#0">Return Of five</a></li>
+                          <li><a href="#0">Ded Army</a></li>
+                          <li><a href="#0">King Kong</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">Action Movie</a></li>
+                    <li><a href="#0">Thriller Movie</a></li>
+                    <li><a href="#0">Most Evended</a></li>
+                  </ul>
+                  <!-- <ul class="filims-list">
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/01.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Spider Man</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/02.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Army of the dead</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/03.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Dora</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul> -->
+                </div>
+              </div>
+            </div>
+            <div class="body-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area ends  -->
+
+    <!-- all movies banner start -->
+    <section class="movies-banner">
+      <div class="movies-banner-slider swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(assets/images/banner/movies-banner.jpg);
+            "
+          >
+            <div class="theme-container">
+              <div class="movies-description">
+                <div class="description-inner">
+                  <span>Duration: 1h 47m</span>
+                  <div class="movi-gen">
+                    <div class="imdb-rating">
+                      <i class="fa fa-star"></i>
+                      <strong>6.5</strong>
+                    </div>
+                    <ul class="gen-list">
+                      <li>
+                        <span>Action</span>
+                      </li>
+                      <li>
+                        <span>Adventure</span>
+                      </li>
+                      <li>
+                        <span>Sci-Fi</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="movie-title">Rampage</h2>
+                  <p>
+                    When three different animals become infected with a
+                    dangerous pathogen, a primatologist and a geneticist team up
+                    to stop them from destroying Chicago.
+                  </p>
+                  <ul class="btn-list">
+                    <li>
+                      <button type="button" class="btn">
+                        <span class="fa fa-play me-2"></span> <span>Watch</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn">
+                        <span class="fa fa-plus me-2"></span>
+                        <span>Add List</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(assets/images/banner/movies-banner-1.jpg);
+            "
+          >
+            <div class="theme-container">
+              <div class="movies-description">
+                <div class="description-inner">
+                  <span>Duration: 1h 47m</span>
+                  <div class="movi-gen">
+                    <div class="imdb-rating">
+                      <i class="fa fa-star"></i>
+                      <strong>8.5</strong>
+                    </div>
+                    <ul class="gen-list">
+                      <li>
+                        <span>Action</span>
+                      </li>
+                      <li>
+                        <span>Adventure</span>
+                      </li>
+                      <li>
+                        <span>Sci-Fi</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="movie-title">Avengers Endgame</h2>
+                  <p>
+                    After the devastating events of Avengers: Infinity War
+                    (2018), the universe is in ruins. ... Along the way, the
+                    Avengers realize that sacrifices must be made as they
+                    prepare for the ultimate final showdown with Thanos
+                  </p>
+                  <ul class="btn-list">
+                    <li>
+                      <button type="button" class="btn">
+                        <span class="fa fa-play me-2"></span> <span>Watch</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn">
+                        <span class="fa fa-plus me-2"></span>
+                        <span>Add List</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(assets/images/banner/movies-banner-2.jpg);
+            "
+          >
+            <div class="theme-container">
+              <div class="movies-description">
+                <div class="description-inner">
+                  <span>Duration: 1h 47m</span>
+                  <div class="movi-gen">
+                    <div class="imdb-rating">
+                      <i class="fa fa-star"></i>
+                      <strong>8.9</strong>
+                    </div>
+                    <ul class="gen-list">
+                      <li>
+                        <span>Action</span>
+                      </li>
+                      <li>
+                        <span>Adventure</span>
+                      </li>
+                      <li>
+                        <span>Sci-Fi</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="movie-title">John Wick</h2>
+                  <p>
+                    John Wick is a fictional character and the titular
+                    protagonist of the neo-noir action thriller film series John
+                    Wick, portrayed by Keanu Reeves.
+                  </p>
+                  <ul class="btn-list">
+                    <li>
+                      <button type="button" class="btn">
+                        <span class="fa fa-play me-2"></span> <span>Watch</span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="btn">
+                        <span class="fa fa-plus me-2"></span>
+                        <span>Add List</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-button-next button-next"></div>
+        <div class="swiper-button-prev button-prev"></div>
+      </div>
+    </section>
+    <!-- all movies banner ends  -->
+
+    <!-- trandnow movie area start -->
+    <section class="trands-area pt-0">
+      <div class="theme-container">
+        <div class="section-header-style">
+          <div class="d-flex">
+            <i class="fas fa-chart-line me-2"></i>
+            <h4>Trends now</h4>
+          </div>
+        </div>
+      </div>
+      <div class="trands-menu">
+        <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-action-tab" data-bs-toggle="pill" data-bs-target="#pills-action" type="button" role="tab" aria-controls="pills-action" aria-selected="true">action</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-adventure-tab" data-bs-toggle="pill" data-bs-target="#pills-adventure" type="button" role="tab" aria-controls="pills-adventure" aria-selected="false">adventure</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-animation-tab" data-bs-toggle="pill" data-bs-target="#pills-animation" type="button" role="tab" aria-controls="pills-animation" aria-selected="false">animation</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link pu-link" id="pills-biography-tab" data-bs-toggle="pill" data-bs-target="#pills-biography" type="button" role="tab" aria-controls="pills-biography" aria-selected="false">biography</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-crime-tab" data-bs-toggle="pill" data-bs-target="#pills-crime" type="button" role="tab" aria-controls="pills-crime" aria-selected="false">crime</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link pu-link" id="pills-comedy-tab" data-bs-toggle="pill" data-bs-target="#pills-comedy" type="button" role="tab" aria-controls="pills-comedy" aria-selected="false">comedy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-documentery-tab" data-bs-toggle="pill" data-bs-target="#pills-documentery" type="button" role="tab" aria-controls="pills-documentery" aria-selected="false">documentery</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link pu-link" id="pills-drama-tab" data-bs-toggle="pill" data-bs-target="#pills-drama" type="button" role="tab" aria-controls="pills-drama" aria-selected="false">drama</button>
+        </li>
+      </ul> -->
+        <div class="theme-container">
+          <div class="trands-menu-slider owl-carousel owl-theme">
+            <div class="item">
+              <a href="#0">action</a>
+            </div>
+            <div class="item">
+              <a href="#0">adventure</a>
+            </div>
+            <div class="item">
+              <a href="#0" class="active-next">animation</a>
+            </div>
+            <div class="item">
+              <a href="#0">biography</a>
+            </div>
+            <div class="item">
+              <a href="#0">crime</a>
+            </div>
+            <div class="item">
+              <a href="#0" class="active-next">comedy</a>
+            </div>
+            <div class="item">
+              <a href="#0">documentery</a>
+            </div>
+            <div class="item">
+              <a href="#0">drama</a>
+            </div>
+            <div class="item">
+              <a href="#0">Sifi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="recently-area p-0" id="netflix-area">
+        <div class="section-wrapper">
+          <!-- Swiper -->
+          <div class="viewed-slider viewed-style-one swiper my-swiper">
+            <div class="swiper-wrapper viewed-wrapper">
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/1.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Gravity <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/2.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Inspector <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/3.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Sky Staar <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/4.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Bload Shoot <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/5.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Army of God <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/6.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Nobody <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next button-next"></div>
+            <div class="swiper-button-prev button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- trandnow movie area ends  -->
+
+    <!-- movie filter area start -->
+    <section class="movie-filter-area">
+      <div class="theme-container">
+        <div class="section-header-style">
+          <div class="d-flex">
+            <i class="fas fa-photo-video me-2"></i>
+            <h4>Movies</h4>
+          </div>
+          <div class="d-flex">
+            <button type="button" class="btn btn-outline me-2">
+              <span>Next</span>
+            </button>
+            <button type="button" class="btn btn-outline">
+              <span>Prev</span>
+            </button>
+          </div>
+        </div>
+        <div class="filter-content">
+          <div class="sort-by">
+            <div class="filter-group">
+              <button type="button" class="watch-btn"><span>More</span></button>
+              <span>Sort By :</span>
+              <ul class="group-list">
+                <li>
+                  <button type="button">Latest</button>
+                </li>
+                <li>
+                  <select name="year" id="yearSorting">
+                    <option value="1" selected>Year</option>
+                    <option value="1" selected>2015</option>
+                    <option value="1" selected>2016</option>
+                    <option value="1" selected>2017</option>
+                    <option value="1" selected>2018</option>
+                    <option value="1" selected>2019</option>
+                    <option value="1" selected>2020</option>
+                    <option value="1" selected>2021</option>
+                    <option value="1" selected>2022</option>
+                  </select>
+                </li>
+                <li>
+                  <select name="name-sort" id="nameSort">
+                    <option value="1" selected>A-Z</option>
+                    <option value="1" selected>A-B</option>
+                    <option value="1" selected>B-C</option>
+                    <option value="1" selected>C-D</option>
+                    <option value="1" selected>D-E</option>
+                    <option value="1" selected>E-F</option>
+                    <option value="1" selected>F-G</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rating-by d-flex">
+            <div class="">
+              <span class="h-6 me-1 fw-bold">0.0 - 7.2</span>
+              <i class="fa fa-star"></i>
+            </div>
+            <div class="price-by">
+              <div class="pro-filter">
+                <div
+                  class="nstSlider"
+                  data-range_min="0"
+                  data-range_max="100000"
+                  data-cur_min="0"
+                  data-cur_max="80000"
+                >
+                  <div
+                    class="bar nst-animating"
+                    style="left: 46px; width: 144px"
+                  ></div>
+                  <div
+                    class="leftGrip nst-animating"
+                    tabindex="0"
+                    style="left: 46px"
+                  ></div>
+                  <div
+                    class="rightGrip nst-animating"
+                    tabindex="0"
+                    style="left: 184px"
+                  ></div>
+                </div>
+                <!-- <button type="button" class="filter-btn">
+                <span class="leftLabel">20000</span>
+              </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-menu-az swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <button type="button">A</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">B</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">C</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">D</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">E</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">F</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">G</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">H</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">I</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">J</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">K</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">L</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">M</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">M</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">O</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">P</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">Q</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">R</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">S</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">T</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">U</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">V</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">W</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">X</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">Y</button>
+            </div>
+            <div class="swiper-slide">
+              <button type="button">Z</button>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="filter-movie">
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/1.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Pasipic Rim 2 : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/2.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Pasipic Rim 2 : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/2.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Rampage : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/4.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Jhon Wick : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/5.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Rampage : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/6.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Jhon Wick : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/7.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Jhon Wick : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/8.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Rampage : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/1.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Pasipic Rim 2 : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/2.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Pasipic Rim 2 : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/2.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Rampage : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="movie-col">
+            <div class="trand-item">
+              <div class="dr-thumb item-thumb">
+                <img src="assets/images/recently/4.jpg" alt="" />
+                <ul class="cart-list">
+                  <li><a href="#0">HD-RIP</a></li>
+                  <li>
+                    <a href="#0"><i class="fa fa-star"></i> 5.8</a>
+                  </li>
+                </ul>
+                <div class="info">
+                  <h6>Pasipic Rim 2</h6>
+                  <p class="small m-0">action , comedy , sci-fi</p>
+                  <p class="small mb-4">Hollywood | 720p Bluray</p>
+                  <ul class="cart-lists">
+                    <li>
+                      <a href="#0"><i class="fa fa-heart"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="fas fa-plus-circle"></i></a>
+                    </li>
+                    <li>
+                      <a href="#0"><i class="far fa-thumbs-up"></i></a>
+                    </li>
+                  </ul>
+                  <div class="movie-btn">
+                    <button type="button" class="btn me-2">
+                      <span><i class="fa fa-photo-video"></i></span>
+                    </button>
+                    <button type="button" class="btn">
+                      <span><i class="fa fa-video"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item-text">
+                <a href="#0" class="flex-text">
+                  <h6>Jhon Wick : Uprising</h6>
+                  <span>2018</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="paginationx movie-pagination">
+          <li><a href="#" class="prev fa fa-arrow-left"> </a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#" class="active">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#" class="next fa fa-arrow-right"></a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- movie filter area ends  -->
+
+    <!-- recently viewed start -->
+    <section class="recently-area" id="netflix-area">
+      <div class="theme-container">
+        <div class="section-header section-header-style">
+          <h4>Recent Uploads Movies</h4>
+          <a href="#0">See All <i class="fa fa-angle-double-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="section-wrapper">
+        <div class="viewed-slider viewed-style-one swiper my-swiper">
+          <div class="swiper-wrapper viewed-wrapper">
+            <div class="swiper-slide viewed-slide">
+              <div class="viewed-item post-item">
+                <a href="#">
+                  <div class="item-thumb">
+                    <img src="assets/images/recently/1.jpg" alt="" />
+                    <div class="thumb-text">
+                      <span>Romance, 2014</span>
+                      <h6>Convenient Groom</h6>
+                    </div>
+                    <a href="#0" class="video-btn">
+                      <i class="far fa-play-circle"></i>
+                      <span class="before"></span>
+                      <span class="after"></span>
+                    </a>
+                    <div class="hover-content">
+                      <h2>Gravity <i class="fa fa-plus"></i></h2>
+                      <p>
+                        Radhe is a singing prodigy determined to follow in the
+                        classical footsteps of his grandfather.
+                      </p>
+                      <span class="tag">2 h 20 min</span>
+                      <span class="tag">2020</span>
+                      <span class="tag"><b>HD</b></span>
+                      <span class="tag"><b>16+</b></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide viewed-slide">
+              <div class="viewed-item post-item">
+                <a href="#">
+                  <div class="item-thumb">
+                    <img src="assets/images/recently/2.jpg" alt="" />
+                    <div class="thumb-text">
+                      <span>Romance, 2014</span>
+                      <h6>Convenient Groom</h6>
+                    </div>
+                    <a href="#0" class="video-btn">
+                      <i class="far fa-play-circle"></i>
+                      <span class="before"></span>
+                      <span class="after"></span>
+                    </a>
+                    <div class="hover-content">
+                      <h2>Gravity <i class="fa fa-plus"></i></h2>
+                      <p>
+                        Radhe is a singing prodigy determined to follow in the
+                        classical footsteps of his grandfather.
+                      </p>
+                      <span class="tag">2 h 20 min</span>
+                      <span class="tag">2020</span>
+                      <span class="tag"><b>HD</b></span>
+                      <span class="tag"><b>16+</b></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide viewed-slide">
+              <div class="viewed-item post-item">
+                <a href="#">
+                  <div class="item-thumb">
+                    <img src="assets/images/recently/3.jpg" alt="" />
+                    <div class="thumb-text">
+                      <span>Romance, 2014</span>
+                      <h6>Convenient Groom</h6>
+                    </div>
+                    <a href="#0" class="video-btn">
+                      <i class="far fa-play-circle"></i>
+                      <span class="before"></span>
+                      <span class="after"></span>
+                    </a>
+                    <div class="hover-content">
+                      <h2>Gravity <i class="fa fa-plus"></i></h2>
+                      <p>
+                        Radhe is a singing prodigy determined to follow in the
+                        classical footsteps of his grandfather.
+                      </p>
+                      <span class="tag">2 h 20 min</span>
+                      <span class="tag">2020</span>
+                      <span class="tag"><b>HD</b></span>
+                      <span class="tag"><b>16+</b></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide viewed-slide">
+              <div class="viewed-item post-item">
+                <a href="#">
+                  <div class="item-thumb">
+                    <img src="assets/images/recently/4.jpg" alt="" />
+                    <div class="thumb-text">
+                      <span>Romance, 2014</span>
+                      <h6>Convenient Groom</h6>
+                    </div>
+                    <a href="#0" class="video-btn">
+                      <i class="far fa-play-circle"></i>
+                      <span class="before"></span>
+                      <span class="after"></span>
+                    </a>
+                    <div class="hover-content">
+                      <h2>Gravity <i class="fa fa-plus"></i></h2>
+                      <p>
+                        Radhe is a singing prodigy determined to follow in the
+                        classical footsteps of his grandfather.
+                      </p>
+                      <span class="tag">2 h 20 min</span>
+                      <span class="tag">2020</span>
+                      <span class="tag"><b>HD</b></span>
+                      <span class="tag"><b>16+</b></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide viewed-slide">
+              <div class="viewed-item post-item">
+                <a href="#">
+                  <div class="item-thumb">
+                    <img src="assets/images/recently/5.jpg" alt="" />
+                    <div class="thumb-text">
+                      <span>Romance, 2014</span>
+                      <h6>Convenient Groom</h6>
+                    </div>
+                    <a href="#0" class="video-btn">
+                      <i class="far fa-play-circle"></i>
+                      <span class="before"></span>
+                      <span class="after"></span>
+                    </a>
+                    <div class="hover-content">
+                      <h2>Gravity <i class="fa fa-plus"></i></h2>
+                      <p>
+                        Radhe is a singing prodigy determined to follow in the
+                        classical footsteps of his grandfather.
+                      </p>
+                      <span class="tag">2 h 20 min</span>
+                      <span class="tag">2020</span>
+                      <span class="tag"><b>HD</b></span>
+                      <span class="tag"><b>16+</b></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide viewed-slide">
+              <div class="viewed-item post-item">
+                <a href="#">
+                  <div class="item-thumb">
+                    <img src="assets/images/recently/6.jpg" alt="" />
+                    <div class="thumb-text">
+                      <span>Romance, 2014</span>
+                      <h6>Convenient Groom</h6>
+                    </div>
+                    <a href="#0" class="video-btn">
+                      <i class="far fa-play-circle"></i>
+                      <span class="before"></span>
+                      <span class="after"></span>
+                    </a>
+                    <div class="hover-content">
+                      <h2>Gravity <i class="fa fa-plus"></i></h2>
+                      <p>
+                        Radhe is a singing prodigy determined to follow in the
+                        classical footsteps of his grandfather.
+                      </p>
+                      <span class="tag">2 h 20 min</span>
+                      <span class="tag">2020</span>
+                      <span class="tag"><b>HD</b></span>
+                      <span class="tag"><b>16+</b></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next button-next"></div>
+          <div class="swiper-button-prev button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- recently viewed ends  -->
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+      <div class="foot-overlay"></div>
+      <div class="theme-container">
+        <div class="flex-parent">
+          <div class="flex-child item1">
+            <a href="index.html"
+              ><img class="logo" src="assets/images/logo/logo.png" alt=""
+            /></a>
+            <p>
+              5th Avenue st, Modhubag<br />
+              Dhaka Bangladesh, G- 1239
+            </p>
+            <p>Call us: <a href="#">(+880) 1768-162459</a></p>
+          </div>
+          <div class="flex-child item2">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Moviedom</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="flex-child item3">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+          <div class="flex-child item4">
+            <h4>Account</h4>
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Watchlist</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">User Guide</a></li>
+            </ul>
+          </div>
+          <div class="flex-child item5">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to our newsletter system now <br />
+              to get latest news from us.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Enter your email..." />
+            </form>
+            <button type="button" class="btn">
+              <span>Subscribe now </span
+              ><span><i class="fa fa-angle-right ms-2"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="ft-copyright">
+      <div class="ft-left">
+        <p>
+          © 2022 <a href="#0">Moviedom</a>. All Rights Reserved. Developed By
+          <a href="#0">Moviedom</a>
+        </p>
+      </div>
+    </div>
+    <!-- footer area ends  -->
+
+    <!-- login form -->
+    <div
+      class="modal fade login"
+      id="login"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content relative">
+          <div class="modal-header">
+            <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+              <i class="input-icon field-icon fa">
+                <img
+                  src="https://bookingcore.org/images/ico_close.svg"
+                  alt="close"
+                />
+              </i>
+            </span>
+          </div>
+          <div class="modal-body relative">
+            <div class="social-login">
+              <button type="button" class="btn-facebook">
+                <i class="fab fa-facebook me-4"></i>Login With Facebook
+              </button>
+              <button type="button" class="btn-google">
+                <i class="fab fa-google-plus me-4"></i>Login With Facebook
+              </button>
+            </div>
+            <form
+              class="bravo-form-login"
+              method="POST"
+              action="https://bookingcore.org/en/login"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="email"
+                  autocomplete="off"
+                  placeholder="Email address"
+                />
+                <i class="input-icon fa fa-envelope-o"></i>
+                <span class="invalid-feedback error error-email"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  autocomplete="off"
+                  placeholder="Password"
+                />
+                <i class="input-icon fa fa-lock"></i>
+                <span class="invalid-feedback error error-password"></span>
+              </div>
+              <div class="form-group">
+                <div class="d-flex justify-content-between">
+                  <label for="remember-me" class="mb0">
+                    <input
+                      type="checkbox"
+                      name="remember"
+                      id="remember-me"
+                      value="1"
+                    />
+                    Remember me <span class="checkmark fcheckbox"></span>
+                  </label>
+                  <a href="forgot.html">Forgot Password?</a>
+                </div>
+              </div>
+              <div class="error message-error invalid-feedback"></div>
+              <div class="form-group">
+                <button class="btn" type="submit"><span>Sign In</span></button>
+              </div>
+              <div class="c-grey font-medium f14 text-center">
+                Do not have an account?
+                <a href="#0" data-bs-target="#register" data-bs-toggle="modal"
+                  >Sign Up</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login form -->
+
+    <!-- ragister form -->
+    <div
+      class="modal fade login"
+      id="register"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content relative">
+          <div class="modal-header">
+            <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+              <i class="input-icon field-icon fa">
+                <img
+                  src="https://bookingcore.org/images/ico_close.svg"
+                  alt="close"
+              /></i>
+            </span>
+          </div>
+          <div class="modal-body">
+            <form class="form bravo-form-register" method="post">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="first_name"
+                      autocomplete="off"
+                      placeholder="First Name"
+                    />
+                    <i class="input-icon field-icon fa"
+                      ><img
+                        src="https://bookingcore.org/images/ico_fullname_signup.svg"
+                    /></i>
+                    <span
+                      class="invalid-feedback error error-first_name"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="last_name"
+                      autocomplete="off"
+                      placeholder="Last Name"
+                    />
+                    <i class="input-icon field-icon fa"
+                      ><img
+                        src="https://bookingcore.org/images/ico_fullname_signup.svg"
+                    /></i>
+                    <span class="invalid-feedback error error-last_name"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  autocomplete="off"
+                  placeholder="Email address"
+                />
+                <i class="input-icon field-icon fa"
+                  ><img
+                    src="https://bookingcore.org/images/ico_email_login_form.svg"
+                /></i>
+                <span class="invalid-feedback error error-email"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  autocomplete="off"
+                  placeholder="Password"
+                />
+                <i class="input-icon field-icon fa"
+                  ><img
+                    src="https://bookingcore.org/images/ico_pass_login_form.svg"
+                /></i>
+                <span class="invalid-feedback error error-password"></span>
+              </div>
+              <div class="form-group">
+                <label for="term">
+                  <input id="term" type="checkbox" name="term" class="mr5" />
+                  I have read and accept the
+                  <a href="privacy&policy.html" target="_blank"
+                    >Terms and Privacy Policy</a
+                  >
+                  <span class="checkmark fcheckbox"></span>
+                </label>
+                <div>
+                  <span class="invalid-feedback error error-term"></span>
+                </div>
+              </div>
+              <div class="error message-error invalid-feedback"></div>
+              <div class="form-group">
+                <button type="submit" class="btn"><span>Sign Up</span></button>
+              </div>
+              <div class="c-grey text-center">
+                Already have an account?
+                <a href="#0" data-bs-target="#login" data-bs-toggle="modal"
+                  >Log In</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ragister form -->
+
+    <!-- optional js -->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/tilt.js"></script>
+    <script src="assets/js/nstslider.js"></script>
+    <script src="assets/js/direction.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/pages_js/movie.js"></script>
+    <script src="assets/js/function.js"></script>
+  </body>
+</html>

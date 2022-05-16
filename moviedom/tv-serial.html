@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- lightcase css -->
+    <link rel="stylesheet" href="assets/css/lightcase.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- font css -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <!-- custom -->
+    <link rel="stylesheet" href="assets/sass/style.css" />
+
+    <title>Moviedom</title>
+  </head>
+
+  <body>
+    <!--preloading-->
+    <div id="preloader">
+      <img
+        class="logo"
+        src="assets/images/logo/logo.png"
+        alt=""
+        width="119"
+        height="58"
+      />
+      <div id="status">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--end of preloading-->
+
+    <!-- header area start -->
+    <header>
+      <div class="header-sticky">
+        <div class="theme-container">
+          <div class="header-item">
+            <div class="logo-area">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="assets/images/logo/logo.png" alt="logo-image" />
+                </a>
+              </div>
+              <div class="main-menu">
+                <ul class="menu-list">
+                  <li><a href="all-movie.html">Movies</a></li>
+                  <li>
+                    <a href="#0" class="active">Genre</a>
+                    <div class="sub-menu">
+                      <ul class="sub-list genre" id="myDIV">
+                        <li><a class="" href="#0">Action</a></li>
+                        <li><a href="#0">Adventure</a></li>
+                        <li><a href="#0">Animation</a></li>
+                        <li><a href="#0">Biography</a></li>
+                        <li><a href="#0">Costume</a></li>
+                        <li><a href="#0">Comedy</a></li>
+                        <li><a href="#0">Crime</a></li>
+                        <li><a href="#0">Documentary</a></li>
+                        <li><a href="#0">Drama</a></li>
+                        <li><a href="#0">Family</a></li>
+                        <li><a href="#0">Fantasy</a></li>
+                        <li><a href="#0">Game-Show</a></li>
+                        <li><a href="#0">History</a></li>
+                        <li><a href="#0">Horror</a></li>
+                        <li><a href="#0">Kungfu</a></li>
+                        <li><a href="#0">Music</a></li>
+                        <li><a href="#0">Mystery</a></li>
+                        <li><a href="#0">Reality-TV</a></li>
+                        <li><a href="#0">Romance</a></li>
+                        <li><a href="#0">Sci-Fi</a></li>
+                        <li><a href="#0">Sport</a></li>
+                        <li><a href="#0">Thriller</a></li>
+                        <li><a href="#0">TV Show</a></li>
+                        <li><a href="#0">War</a></li>
+                        <li><a href="#0">Western</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">Country</a></li>
+                  <li><a href="#0">Tv Series</a></li>
+                  <li><a href="#0">Games</a></li>
+                  <li><a href="#0">Software</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="user-item">
+              <div class="item-list">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-target="#login"
+                  data-bs-toggle="modal"
+                >
+                  <span>Login</span>
+                </button>
+                <button type="button" class="search-bar">
+                  <i class="fa fa-search"></i>
+                </button>
+                <div class="search-input">
+                  <div class="search-input-icon">
+                    <i class="fa fa-search info"></i>
+                  </div>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Explore Info..."
+                    tabindex="-1"
+                    data-search="template-list"
+                  />
+                  <div class="search-input-close">
+                    <i class="fa fa-times"></i>
+                  </div>
+                  <ul class="search-list search-list-main"></ul>
+                </div>
+                <button type="button" class="movie-sliderBtn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="movie-sidebar">
+                  <div class="sidebar-title">
+                    <h4>New Filims</h4>
+                    <button type="button" id="croseBtn">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                  <ul class="sidebar-menulist" id="accordionExample">
+                    <li id="headingOne">
+                      <a
+                        href="#collapseOne"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                        >Home</a
+                      >
+                      <div
+                        id="collapseOne"
+                        class="collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="movie.html">Movies</a></li>
+                          <li><a href="all-movie.html">All Movies</a></li>
+                          <li><a href="profile.html">Profile</a></li>
+                          <li><a href="preference.html">Preference</a></li>
+                          <li><a href="tv-serial.html">TV Show</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">About</a></li>
+                    <li id="headingTwo">
+                      <a
+                        href="#collapseTwo"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                        >Blogs</a
+                      >
+                      <div
+                        id="collapseTwo"
+                        class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="#0">Item One</a></li>
+                          <li><a href="#0">Lord of</a></li>
+                          <li><a href="#0">Item Three</a></li>
+                          <li><a href="#0">Item Four</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">New Filims</a></li>
+                    <li><a href="#0">Old Filims</a></li>
+                    <li id="headingThree">
+                      <a
+                        href="#collapseThree"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                        >Upcoming Movies</a
+                      >
+                      <div
+                        id="collapseThree"
+                        class="collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="#0">Jhon Wick</a></li>
+                          <li><a href="#0">Return Of five</a></li>
+                          <li><a href="#0">Ded Army</a></li>
+                          <li><a href="#0">King Kong</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">Action Movie</a></li>
+                    <li><a href="#0">Thriller Movie</a></li>
+                    <li><a href="#0">Most Evended</a></li>
+                  </ul>
+                  <!-- <ul class="filims-list">
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/01.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Spider Man</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/02.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Army of the dead</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/03.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Dora</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul> -->
+                </div>
+              </div>
+            </div>
+            <div class="body-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area ends  -->
+
+    <!-- single area sart -->
+    <section class="movie-single p-0">
+      <div class="single-wrapper">
+        <div class="single-inner">
+          <!-- <div class="single-menu">
+            <div class="menu-item">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="assets/images/logo/logo.png" alt="" />
+                </a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#0">Home</a></li>
+                <li><a href="#0">Browse</a></li>
+                <li><a href="#0">Recommended</a></li>
+                <li><a href="#0">Watch list</a></li>
+                <li><a href="#0">Series</a></li>
+              </ul>
+              <ul class="menu-list style-one">
+                <li><a href="#0">My profile</a></li>
+                <li><a href="#0">My Favorites</a></li>
+                <li><a href="#0">Logout</a></li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="single-details">
+            <div class="details-inner">
+              <div class="innering-inner">
+                <div class="back-btn">
+                  <a href="index.html">
+                    <i class="fa fa-arrow-left"></i>
+                    <span>Browse</span>
+                  </a>
+                </div>
+                <div class="details-heading">
+                  <div class="heading-flex">
+                    <h2>Vikings</h2>
+                    <div class="rating-flex">
+                      <div class="movie-rating">
+                        <span>
+                          <svg
+                            id="home_img"
+                            class="ipc-logo"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="64"
+                            height="24"
+                            viewBox="0 0 64 32"
+                            version="1.1"
+                          >
+                            <g fill="transparent">
+                              <rect
+                                x="0"
+                                y="0"
+                                width="100%"
+                                height="100%"
+                                rx="4"
+                              ></rect>
+                            </g>
+                            <g
+                              transform="translate(8.000000, 7.000000)"
+                              fill="#fff"
+                              fill-rule="nonzero"
+                            >
+                              <polygon points="0 18 5 18 5 0 0 0"></polygon>
+                              <path
+                                d="M15.6725178,0 L14.5534833,8.40846934 L13.8582008,3.83502426 C13.65661,2.37009263 13.4632474,1.09175121 13.278113,0 L7,0 L7,18 L11.2416347,18 L11.2580911,6.11380679 L13.0436094,18 L16.0633571,18 L17.7583653,5.8517865 L17.7707076,18 L22,18 L22,0 L15.6725178,0 Z"
+                              ></path>
+                              <path
+                                d="M24,18 L24,0 L31.8045586,0 C33.5693522,0 35,1.41994415 35,3.17660424 L35,14.8233958 C35,16.5777858 33.5716617,18 31.8045586,18 L24,18 Z M29.8322479,3.2395236 C29.6339219,3.13233348 29.2545158,3.08072342 28.7026524,3.08072342 L28.7026524,14.8914865 C29.4312846,14.8914865 29.8796736,14.7604764 30.0478195,14.4865461 C30.2159654,14.2165858 30.3021941,13.486105 30.3021941,12.2871637 L30.3021941,5.3078959 C30.3021941,4.49404499 30.272014,3.97397442 30.2159654,3.74371416 C30.1599168,3.5134539 30.0348852,3.34671372 29.8322479,3.2395236 Z"
+                              ></path>
+                              <path
+                                d="M44.4299079,4.50685823 L44.749518,4.50685823 C46.5447098,4.50685823 48,5.91267586 48,7.64486762 L48,14.8619906 C48,16.5950653 46.5451816,18 44.749518,18 L44.4299079,18 C43.3314617,18 42.3602746,17.4736618 41.7718697,16.6682739 L41.4838962,17.7687785 L37,17.7687785 L37,0 L41.7843263,0 L41.7843263,5.78053556 C42.4024982,5.01015739 43.3551514,4.50685823 44.4299079,4.50685823 Z M43.4055679,13.2842155 L43.4055679,9.01907814 C43.4055679,8.31433946 43.3603268,7.85185468 43.2660746,7.63896485 C43.1718224,7.42607505 42.7955881,7.2893916 42.5316822,7.2893916 C42.267776,7.2893916 41.8607934,7.40047379 41.7816216,7.58767002 L41.7816216,9.01907814 L41.7816216,13.4207851 L41.7816216,14.8074788 C41.8721037,15.0130276 42.2602358,15.1274059 42.5316822,15.1274059 C42.8031285,15.1274059 43.1982131,15.0166981 43.281155,14.8074788 C43.3640968,14.5982595 43.4055679,14.0880581 43.4055679,13.2842155 Z"
+                              ></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <span>8.5</span>
+                      </div>
+                      <div class="video-rating">
+                        <i class="fa fa-video"></i>
+                        <span>8.1</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="single-title">
+                    <h2>Warriors Dont Show Their heart until axe reveals it</h2>
+                  </div>
+                  <div class="trailer-btn">
+                    <a href="#0" class="video-btn">
+                      <i class="fa fa-play"></i>
+                      <span class="before"></span>
+                      <span class="after"></span>
+                    </a>
+                    <p>Watch Trailer</p>
+                  </div>
+                  <div class="play-btns">
+                    <button type="button" class="btn"><span>Play</span></button>
+                   <div class="sr-status">
+                    <button type="button" class="active me-0">
+                      <i class="far fa-thumbs-up"></i>
+                    </button>
+                    <button type="button">
+                      <i class="far fa-thumbs-down"></i>
+                    </button>
+                   </div>
+                  </div>
+                </div>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-season1-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-season1"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-season1"
+                      aria-selected="true"
+                    >
+                      Season1
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-season2-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-season2"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-season2"
+                      aria-selected="false"
+                    >
+                      Season2
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-season3-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-season3"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-season3"
+                      aria-selected="false"
+                    >
+                      Season3
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-season4-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-season4"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-season4"
+                      aria-selected="true"
+                    >
+                      Season4
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-season5-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-season5"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-season5"
+                      aria-selected="false"
+                    >
+                      Season5
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-season6-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-season6"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-season6"
+                      aria-selected="false"
+                    >
+                      Season6
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-season1"
+                    role="tabpanel"
+                    aria-labelledby="pills-season1-tab"
+                  >
+                    <div class="Series-wrapper">
+                      <div class="single-serise-slider swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/03.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/02.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/03.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/04.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/05.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/03.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/02.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/03.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="serise-card">
+                              <div class="addMovie-card">
+                                <div class="card-thumb">
+                                  <img
+                                    src="assets/images/serise/04.jpg"
+                                    alt=""
+                                  />
+                                  <a href="#0" class="video-btn">
+                                    <i class="far fa-play-circle"></i>
+                                    <span class="before"></span>
+                                    <span class="after"></span>
+                                  </a>
+                                  <div class="thumb-text">
+                                    <h6>EP 1</h6>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next button-next"></div>
+                        <div class="swiper-button-prev button-prev"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-season2"
+                    role="tabpanel"
+                    aria-labelledby="pills-season2-tab"
+                  >
+                    <p>No Movies available</p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-season3"
+                    role="tabpanel"
+                    aria-labelledby="pills-season3-tab"
+                  >
+                    <p>No Movies available</p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-season4"
+                    role="tabpanel"
+                    aria-labelledby="pills-season4-tab"
+                  >
+                    <p>No Movies available</p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-season5"
+                    role="tabpanel"
+                    aria-labelledby="pills-season5-tab"
+                  >
+                    <p>No Movies available</p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-season6"
+                    role="tabpanel"
+                    aria-labelledby="pills-season6-tab"
+                  >
+                    <p>No Movies available</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- single area ends -->
+
+    <!-- optional js -->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/tilt.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/pages_js/movie.js"></script>
+    <script src="assets/js/function.js"></script>
+  </body>
+</html>

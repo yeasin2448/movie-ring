@@ -1,0 +1,2785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- font css -->
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <!-- custom -->
+  <link rel="stylesheet" href="assets/sass/style.css" />
+  <!-- lightcase css -->
+  <link rel="stylesheet" href="assets/css/lightcase.css">
+  <!-- owl css -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  
+  <title>Moviedom</title>
+</head>
+
+<body>
+
+  <!--preloading-->
+  <!-- <div id="preloader">
+    <img class="logo" src="assets/images/logo/logo.png" alt="" width="119" height="58">
+    <div id="status">
+        <span></span>
+        <span></span>
+    </div>
+  </div> -->
+  <!--end of preloading-->
+
+  <!-- header area start -->
+  <header>
+    <div class="header-sticky">
+      <div class="theme-container">
+        <div class="header-item">
+          <div class="logo-area">
+            <div class="logo">
+              <a href="index.html">
+                <img src="assets/images/logo/logo.png" alt="logo-image">
+              </a>
+            </div>
+            <div class="main-menu">
+              <ul class="menu-list">
+                <li><a href="all-movie.html">Movies</a></li>
+                <li>
+                  <a href="#0" class="active">Genre</a>
+                  <div class="sub-menu">
+                    <ul class="sub-list genre" id="myDIV">
+                      <li> <a class="" href="#0">Action</a> </li>
+                      <li> <a href="#0">Adventure</a> </li>
+                      <li> <a href="#0">Animation</a> </li>
+                      <li> <a href="#0">Biography</a> </li>
+                      <li> <a href="#0">Costume</a> </li>
+                      <li> <a href="#0">Comedy</a> </li>
+                      <li> <a href="#0">Crime</a> </li>
+                      <li> <a href="#0">Documentary</a> </li>
+                      <li> <a href="#0">Drama</a> </li>
+                      <li> <a href="#0">Family</a> </li>
+                      <li> <a href="#0">Fantasy</a> </li>
+                      <li> <a href="#0">Game-Show</a> </li>
+                      <li> <a href="#0">History</a> </li>
+                      <li> <a href="#0">Horror</a> </li>
+                      <li> <a href="#0">Kungfu</a> </li>
+                      <li> <a href="#0">Music</a> </li>
+                      <li> <a href="#0">Mystery</a> </li>
+                      <li> <a href="#0">Reality-TV</a> </li>
+                      <li> <a href="#0">Romance</a> </li>
+                      <li> <a href="#0">Sci-Fi</a> </li>
+                      <li> <a href="#0">Sport</a> </li>
+                      <li> <a href="#0">Thriller</a> </li>
+                      <li> <a href="#0">TV Show</a> </li>
+                      <li> <a href="#0">War</a> </li>
+                      <li> <a href="#0">Western</a> </li>
+                    </ul>    
+                  </div>
+                </li>
+                <li><a href="#0">Country</a></li>
+                <li><a href="#0">Tv Series</a></li>
+                <li><a href="#0">Games</a></li>
+                <li><a href="#0">Software</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="user-item">
+            <div class="item-list">
+              <button type="button" class="btn" data-bs-target="#login" data-bs-toggle="modal"><span>Login</span></button>
+              <button type="button" class="search-bar"><i class="fa fa-search"></i></button>
+              <div class="search-input">
+                <div class="search-input-icon"><i class="fa fa-search info"></i></div>
+                <input class="input" type="text" placeholder="Explore Info..." tabindex="-1"
+                  id="searchList" value="">
+                <div class="search-input-close"><i class="fa fa-times"></i></div>
+                <ul class="search-list search-list-main"></ul>
+              </div>
+              <button type="button" class="movie-sliderBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="movie-sidebar">
+                <div class="sidebar-title">
+                  <h4>New Filims</h4>
+                  <button type="button" id="croseBtn"><i class="fa fa-times"></i></button>
+                </div>
+                <ul class="sidebar-menulist" id="accordionExample">
+                  <li id="headingOne">
+                    <a href="#collapseOne" class="drop-item collapsed" data-bs-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseOne">Home</a>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <ul class="submenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="movie.html">Movies</a></li>
+                        <li><a href="all-movie.html">All Movies</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="preference.html">Preference</a></li>
+                        <li><a href="tv-serial.html">TV Show</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">About</a></li>
+                  <li id="headingTwo">
+                    <a href="#collapseTwo" class="drop-item collapsed" data-bs-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseTwo">Blogs</a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <ul class="submenu">
+                        <li><a href="#0">Item One</a></li>
+                        <li><a href="#0">Lord of</a></li>
+                        <li><a href="#0">Item Three</a></li>
+                        <li><a href="#0">Item Four</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">New Filims</a></li>
+                  <li><a href="#0">Old Filims</a></li>
+                  <li id="headingThree">
+                    <a href="#collapseThree" class="drop-item collapsed" data-bs-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseThree">Upcoming Movies</a>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <ul class="submenu">
+                        <li><a href="#0">Jhon Wick</a></li>
+                        <li><a href="#0">Return Of five</a></li>
+                        <li><a href="#0">Ded Army</a></li>
+                        <li><a href="#0">King Kong</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">Action Movie</a></li>
+                  <li><a href="#0">Thriller Movie</a></li>
+                  <li><a href="#0">Most Evended</a></li>
+                </ul>
+                <!-- <ul class="filims-list">
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/01.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Spider Man</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/02.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Army of the dead</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/03.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Dora</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="body-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <!-- search section start -->
+    <section class="search-area" id="SearchArea">
+      <div class="theme-container">
+        <div class="section-wrapper">
+          <div class="search-menu">
+            <ul class="search-list nav" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">All (100)</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Movie (138)</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Tv Shows (14)</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="playlist-tab" data-bs-toggle="tab" data-bs-target="#playlist" type="button" role="tab" aria-controls="playlist" aria-selected="false">Playlists (4)</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="episode-tab" data-bs-toggle="tab" data-bs-target="#episode" type="button" role="tab" aria-controls="episode" aria-selected="false">Episode (31)</button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="search-content">
+                <div class="search-list">
+                  <ul class="rel-list">
+                    <li><a href="#0"><strong>Game</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Game</strong> of Day</a></li>
+                    <li><a href="#0"><strong>Game</strong> of Master</a></li>
+                    <li><a href="#0"><strong>Game:</strong> The gift For his Life</a></li>
+                    <li><a href="#0"><strong>Games</strong> of Love and chance</a></li>
+                    <li><a href="#0">Big <strong>Game</strong> Le Grand Cope</a></li>
+                    <li><a href="#0">Fair <strong>Game</strong></a></li>
+                    <li><a href="#0">Sacred<strong>Game</strong></a></li>
+                    <li><a href="#0">The Thunder <strong></strong></a></li>
+                    <li><a href="#0">The Limitation <strong>Game</strong></a></li>
+                    <li><a href="#0"><strong>Game</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Game</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Game</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Game</strong> of Mirror</a></li>
+                  </ul>
+                </div>
+                <div class="search-movie">
+                  <ul class="movie-list">
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/01.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/02.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/03.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/04.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/05.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/06.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/07.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/08.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/02.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/04.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/05.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/03.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>Game Of Mirror</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="search-pagination">
+                    <ul>
+                      <li><a href="#0" class="active"></a></li>
+                      <li><a href="#0"></a></li>
+                      <li><a href="#0"></a></li>
+                      <li><a href="#0"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="search-content">
+                <div class="search-list">
+                  <ul class="rel-list">
+                    <li><a href="#0"><strong>Movie</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Movie</strong> of Day</a></li>
+                    <li><a href="#0"><strong>Movie</strong> of Master</a></li>
+                    <li><a href="#0"><strong>Movie:</strong> The gift For his Life</a></li>
+                    <li><a href="#0"><strong>Movies</strong> of Love and chance</a></li>
+                    <li><a href="#0">Big <strong>Movie</strong> Le Grand Cope</a></li>
+                    <li><a href="#0">Fair <strong>Movie</strong></a></li>
+                    <li><a href="#0">Sacred<strong>Movie</strong></a></li>
+                    <li><a href="#0">The Thunder <strong></strong></a></li>
+                    <li><a href="#0">The Limitation <strong>Movie</strong></a></li>
+                    <li><a href="#0"><strong>Movie</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Movie</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Movie</strong> of Mirror</a></li>
+                    <li><a href="#0"><strong>Movie</strong> of Mirror</a></li>
+                  </ul>
+                </div>
+                <div class="search-movie">
+                  <ul class="movie-list">
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/01.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/02.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/03.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/04.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/05.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/06.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/07.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#0">
+                       <div class="list-item">
+                          <div class="list-thumb">
+                            <img src="assets/images/featured-movie/08.jpg" alt="">
+                          </div>
+                          <div class="list-text">
+                            <span class="list-id">20205E50</span>
+                            <h6>The Hobit</h6>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="search-pagination">
+                    <ul>
+                      <li><a href="#0" class="active"></a></li>
+                      <li><a href="#0"></a></li>
+                      <li><a href="#0"></a></li>
+                      <li><a href="#0"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum suscipit temporibus voluptatum error, molestias facere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- search section ends  -->
+  </header>
+  <!-- header area ends  -->
+
+  <!-- banner area start -->
+  <section class="banner-area">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper banner-slides">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_1.jpg" style="opacity:1;">
+            <video style="opacity: 0;" muted>
+              <source src="assets/videos/spider-man.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_2.jpg" style="opacity:1;">
+            <video style="opacity: 0;">
+              <source src="/assets/videos/first and furious.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_3.jpg" style="opacity:1;">
+            <video style="opacity: 0;">
+              <source src="/assets/videos/spider-man.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_4.jpg" style="opacity:1;">
+            <video style="opacity: 0;">
+              <source src="/assets/videos/first and furious.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_5.jpg" style="opacity:1;">
+            <video style="opacity: 0;">
+              <source src="/assets/videos/spider-man.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_6.jpg" style="opacity:1;">
+            <video style="opacity: 0;">
+              <source src="/assets/videos/first and furious.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_7.jpg" style="opacity:1;">
+            <video style="opacity: 0;">
+              <source src="/assets/videos/spider-man.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="video-bg">
+            <img src="assets/images/slide_8.jpg" style="opacity:1;">
+            <video style="opacity: 0;">
+              <source src="/assets/videos/first and furious.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="banner">
+            <div class="theme-container">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="movie-content">
+                  <ul class="movie-categori">
+                    <li><span>Thriller</span></li>
+                    <li><span>Horror</span></li>
+                    <li><span>Teen Program</span></li>
+                  </ul>
+                  <div class="movie-title">
+                    <h2>Stranger Things</h2>
+                  </div>
+                  <div class="movie-dateline">
+                    <ul class="release-list">
+                      <li>
+                        <h6>2020</h6>
+                      </li>
+                      <li>
+                        <h6>Directors : <span>The Buffer Brothers</span></h6>
+                      </li>
+                      <li>
+                        <h6>Seasons : <span>3 (25 Episodes)</span></h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="movie-des">
+                    <p>This thrilling netflix original drama stars Golden Globe-Winnig actress Winona Ryder as Joyce
+                      Bers, Who Lives in a small town.</p>
+                  </div>
+                  <div class="video-btn">
+                    <button type="button" class="btn me-2"><span>Stream Now</span> <i
+                        class="fas fa-play-circle ms-2"></i></button>
+                    <a href="#0" class="btn btn-outline"><span>All Episodes</span></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------slider thummbs-------- -->
+    <div dir="rtl" thumbsSlider="" class="swiper thumbs col-12 col-md-8 col-lg-6">
+      <div class="slider-title mb-3">
+        <div class="row align-items-center">
+          <div class="col pe-0">
+            <button class="slider-button-next ms-2"><i class="fas fa-arrow-right"></i></button>
+            <button class="slider-button-prev"><i class="fas fa-arrow-left"></i></button>
+          </div>
+          <div class="col">
+            <h4 class="text-end mx-1 mx-md-4 mx-lg-3 mx-xl-4">Popular This Week</h4>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/slide_1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slide_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slide_3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slide_4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slide_5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slide_6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slide_7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slide_8.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------Play button ----------- -->
+    <i class="sound-button mt-3 fas fa-volume-up"></i>
+
+  </section>
+  <!-- banner area ends  -->
+
+  <!-- TV show area start -->
+  <section class="tv-show-area">
+    <!-- tabs start -->
+    <div class="theme-container">
+      <nav class="movie-cate">
+          <div class="cate-title-left">
+              <h4 class="tab-title">TV Shows</h4>
+              <div class="nav" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Popular</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">New</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Comming soon</button>
+              </div>
+          </div>
+          <div class="more-btn">
+              <a href="#">See More</a>
+          </div>
+      </nav>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <!-- tv feature content start -->
+        <div class="swiper poster-slider">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_1.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt=""
+                  class="poster-img">
+    
+                
+              </div>
+              <div class="poster-expanded-box">
+    
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_2.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/lAXONuqg41NwUMuzMiFvicDET9Y.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_3.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/8c4a8kE7PizaGQQnditMmI1xbRp.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_4.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/30ULVKdjBcQTsj2aOSThXXZNSxF.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_5.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/tUkY0WxffPZ9PoyC62PIyyUMGnt.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_6.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/zjrJE0fpzPvX8saJXj8VNfcjBoU.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_7.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/kv2Qk9MKFFQo4WQPaYta599HkJP.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="assets/images/slide_8.jpg" alt="" class="poster-cover">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/yhOpkNvgW1ZzmEpR4iqxKwKKShL.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/hMIQiwLpBfTfe3ZbRlNx4225Mgg.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/vHKlIci8f38GaAd361EW0VSx91k.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/hMIQiwLpBfTfe3ZbRlNx4225Mgg.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide poster-card">
+              <div class="poster-box">
+                <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/34nDCQZwaEvsy4CFO5hkGRFDCVU.jpg" alt=""
+                  class="poster-img">
+                
+              </div>
+              <div class="poster-expanded-box">
+                <video class="poster-video" muted>
+                  <source src="assets/videos/first and furious.mp4" type="video/mp4">
+                </video>
+                <div class="poster-details">
+                  <div class="poster-ratting">7.6</div>
+                  <div class="poster-short-details">
+                    <div class="poster-movie-name">Movie Name</div>
+                    <div class="poster-movie-dateline">
+                      <span>Netflix</span>
+                      <span>2016</span>
+                      <span>15+</span>
+                      <span>1h35min</span>
+                    </div>
+                    <div class="poster-movie-short-description">
+                      Lorem ipsum dolor sit amet
+                    </div>
+                  </div>
+                </div>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li class="poster-sound-controller"><i class="sound-button  fas fa-volume-mute"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- tab content end -->
+  </section>
+  <!-- TV show area end -->
+
+  <!-- continue watching start -->
+  <section class="watching-area pt-0">
+    <div class="theme-container">
+      <div class="section-header">
+        <h4>Continue Watching</h4>
+        <a href="#0">See All <i class="fa fa-angle-double-right ms-1"></i> </a>
+      </div>
+    </div>
+    <div class="theme-container pe-0 padding-remove">
+      <div class="section-wrapper">
+        <div class="watching-slider swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="watch-item post-item">
+                <div class="item-thumb">
+                  <a href="#0"><img src="assets/images/featured-movie/01.jpg" alt=""></a>
+                </div>
+                <div class="item-text">
+                  <h5>Game Of Thrones</h5>
+                  <div class="sr-status">
+                    <span>Season 8</span>
+                    <span>Episode 8</span>
+                  </div>
+                  <div class="watch-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="watch-item post-item">
+                <div class="item-thumb">
+                  <a href="#0"><img src="assets/images/featured-movie/06.jpg" alt=""></a>
+                </div>
+                <div class="item-text">
+                  <h5>Game Of Thrones</h5>
+                  <div class="sr-status">
+                    <span>Season 8</span>
+                    <span>Episode 8</span>
+                  </div>
+                  <div class="watch-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="watch-item post-item">
+                <div class="item-thumb">
+                  <a href="#0"><img src="assets/images/featured-movie/02.jpg" alt=""></a>
+                </div>
+                <div class="item-text">
+                  <h5>Game Of Thrones</h5>
+                  <div class="sr-status">
+                    <span>Season 8</span>
+                    <span>Episode 8</span>
+                  </div>
+                  <div class="watch-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="watch-item post-item">
+                <div class="item-thumb">
+                  <a href="#0"><img src="assets/images/featured-movie/03.jpg" alt=""></a>
+                </div>
+                <div class="item-text">
+                  <h5>Game Of Thrones</h5>
+                  <div class="sr-status">
+                    <span>Season 8</span>
+                    <span>Episode 8</span>
+                  </div>
+                  <div class="watch-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="watch-item post-item">
+                <div class="item-thumb">
+                  <a href="#0"><img src="assets/images/featured-movie/04.jpg" alt=""></a>
+                </div>
+                <div class="item-text">
+                  <h5>Game Of Thrones</h5>
+                  <div class="sr-status">
+                    <span>Season 8</span>
+                    <span>Episode 8</span>
+                  </div>
+                  <div class="watch-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="watch-item post-item">
+                <div class="item-thumb">
+                  <a href="#0"><img src="assets/images/featured-movie/05.jpg" alt=""></a>
+                </div>
+                <div class="item-text">
+                  <h5>Game Of Thrones</h5>
+                  <div class="sr-status">
+                    <span>Season 8</span>
+                    <span>Episode 8</span>
+                  </div>
+                  <div class="watch-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next button-next" id="paddRemove"></div>
+          <div class="swiper-button-prev button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- continue watching ends  -->
+
+  <!-- Featured area start -->
+  <section class="featured-area">
+    <div class="featured-bg">
+      <img class="thumbnail" src="assets/images/featured-movie/featured_bg.jpg" alt="image">
+    </div>
+    <div class="featured-content">
+      <div class="theme-container">
+        <div class="section-header">
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-12">
+              <div class="feature-title">
+                <span>TV Serials</span>
+                <h2>Discover ’ 18</h2>
+                <p>New Movies that are already playing in theaters and watch them online now.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-wrapper">
+          <div class="wrap-menu">
+            <h4>New Arrivals</h4>
+            <nav>
+              <div class="nav" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-bangla-tab" data-bs-toggle="tab" data-bs-target="#nav-bangla" type="button" role="tab" aria-controls="nav-bangla" aria-selected="true">Bangla Series</button>
+                <button class="nav-link" id="nav-hindi-tab" data-bs-toggle="tab" data-bs-target="#nav-hindi" type="button" role="tab" aria-controls="nav-hindi" aria-selected="false">hindi Series</button>
+                <button class="nav-link" id="nav-korean-tab" data-bs-toggle="tab" data-bs-target="#nav-korean" type="button" role="tab" aria-controls="nav-korean" aria-selected="false">korean Series</button>
+              </div>
+            </nav>
+          </div>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-bangla" role="tabpanel" aria-labelledby="bangla-tab">
+              <!-- Swiper -->
+              <div class="swiper featured-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/01.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Adventures,</span>
+                          <span>Action</span>
+                        </div>
+                        <h6><a href="#0">Spiderman 3</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/02.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Action,</span>
+                          <span>Drama</span>
+                        </div>
+                        <h6><a href="#0">Phantom Thread</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/03.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Action,</span>
+                          <span>Comedy</span>
+                        </div>
+                        <h6><a href="#0">Made Normal</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/04.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Action,</span>
+                          <span>Fantacy,</span>
+                          <span>Mystery</span>
+                        </div>
+                        <h6><a href="#0">Every Day</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/05.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Action,</span>
+                          <span>Comedy</span>
+                        </div>
+                        <h6><a href="#0">Love, Simon</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/06.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Action,</span>
+                          <span>Comedy,</span>
+                          <span>Fantacy</span>
+                        </div>
+                        <h6><a href="#0">The Tale</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/07.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Adventures,</span>
+                          <span>Action</span>
+                        </div>
+                        <h6><a href="#0">Spiderman 3</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/08.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Adventures</span>
+                        </div>
+                        <h6><a href="#0">Spiderman 3</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="post-item">
+                      <div class="item-thumb">
+                        <img src="assets/images/featured-movie/05.jpg" alt="">
+                        <a href="#0" class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </a>
+                      </div>
+                      <div class="item-text">
+                        <div class="text-flex">
+                          <span>2020</span>
+                          <span>Adventures</span>
+                        </div>
+                        <h6><a href="#0">Spiderman 3</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next button-next"></div>
+                <div class="swiper-button-prev button-prev"></div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-hindi" role="tabpanel" aria-labelledby="hindi-tab">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, praesentium?</p>
+            </div>
+            <div class="tab-pane fade" id="nav-korean" role="tabpanel" aria-labelledby="korean-tab">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit magnam pariatur cumque omnis ratione exercitationem quasi soluta quaerat illo aspernatur quisquam sequi iure adipisci, doloribus praesentium inventore, ipsum, sed harum?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured-overlay"></div>
+  </section>
+  <!-- Featured area ends  -->
+
+  <!-- tranding videos start -->
+  <section class="tranding-area">
+    <div class="theme-container">
+      <div class="section-header">
+        <h4>Tranding</h4>
+        <a href="#0">See All <i class="fa fa-angle-double-right ms-1"></i> </a>
+      </div>
+    </div>
+    <div class="section-wrapper">
+      <div class="tranding-slider swiper mySwiper">
+        <div class="swiper-wrapper viewed-wrapper">
+          <div class="swiper-slide viewed-slide">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/01.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li><i class="fas fa-volume-mute"></i></li>
+                </ul>
+                <div class="poster-details">
+                  <h4>Movie Name</h4>
+                  <div class="poster-dateline">
+                    <span>Netflix</span>
+                    <span>2016</span>
+                    <span>15+</span>
+                    <span>1h35min</span>
+                  </div>
+                  <div class="poster-des">
+                    <p>This movie is very amizing, Actors action screen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/02.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li><i class="fas fa-volume-mute"></i></li>
+                </ul>
+                <div class="poster-details">
+                  <h4>Movie Name</h4>
+                  <div class="poster-dateline">
+                    <span>Netflix</span>
+                    <span>2016</span>
+                    <span>15+</span>
+                    <span>1h35min</span>
+                  </div>
+                  <div class="poster-des">
+                    <p>This movie is very amizing, Actors action screen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/03.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li><i class="fas fa-volume-mute"></i></li>
+                </ul>
+                <div class="poster-details">
+                  <h4>Movie Name</h4>
+                  <div class="poster-dateline">
+                    <span>Netflix</span>
+                    <span>2016</span>
+                    <span>15+</span>
+                    <span>1h35min</span>
+                  </div>
+                  <div class="poster-des">
+                    <p>This movie is very amizing, Actors action screen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/04.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li><i class="fas fa-volume-mute"></i></li>
+                </ul>
+                <div class="poster-details">
+                  <h4>Movie Name</h4>
+                  <div class="poster-dateline">
+                    <span>Netflix</span>
+                    <span>2016</span>
+                    <span>15+</span>
+                    <span>1h35min</span>
+                  </div>
+                  <div class="poster-des">
+                    <p>This movie is very amizing, Actors action screen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/05.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li><i class="fas fa-volume-mute"></i></li>
+                </ul>
+                <div class="poster-details">
+                  <h4>Movie Name</h4>
+                  <div class="poster-dateline">
+                    <span>Netflix</span>
+                    <span>2016</span>
+                    <span>15+</span>
+                    <span>1h35min</span>
+                  </div>
+                  <div class="poster-des">
+                    <p>This movie is very amizing, Actors action screen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/06.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+                <ul class="poster-action-btns">
+                  <li><i class="fas fa-bookmark"></i></li>
+                  <li><i class="far fa-eye"></i></li>
+                  <li><i class="fas fa-volume-mute"></i></li>
+                </ul>
+                <div class="poster-details">
+                  <h4>Movie Name</h4>
+                  <div class="poster-dateline">
+                    <span>Netflix</span>
+                    <span>2016</span>
+                    <span>15+</span>
+                    <span>1h35min</span>
+                  </div>
+                  <div class="poster-des">
+                    <p>This movie is very amizing, Actors action screen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next button-next"></div>
+        <div class="swiper-button-prev button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="tranding-area">
+    <div class="theme-container">
+      <div class="section-header">
+        <h4>Tranding</h4>
+        <a href="#0">See All <i class="fa fa-angle-double-right ms-1"></i> </a>
+      </div>
+    </div>
+    <div class="theme-container">
+      <div class="section-wrapper">
+        <div class="tranding-slider owl-carousel owl-theme">
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/01.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/02.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/03.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/04.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/05.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/06.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/02.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/03.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="tranding-item post-item">
+              <div class="item-thumb">
+                <a href="#0"><img src="assets/images/tranding/04.jpg" alt=""></a>
+                <a href="#0" class="video-btn">
+                  <i class="far fa-play-circle"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- tranding videos ends  -->
+
+  <!-- recently viewed start -->
+  <section class="recently-area pt-0">
+    <div class="theme-container">
+      <div class="section-header section-header-style">
+        <h4>Recently Viewed</h4>
+        <a href="#0">See All <i class="fa fa-angle-double-right ms-1"></i></a>
+      </div>
+    </div>
+    <div class="section-wrapper">
+      <div class="viewed-slider viewed-style-one swiper my-swiper">
+        <div class="swiper-wrapper viewed-wrapper">
+          <div class="swiper-slide viewed-slide">
+            <div class="viewed-item post-item">
+              <a href="#">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/1.jpg" alt="" />
+                  <div class="thumb-text">
+                    <span>Romance, 2014</span>
+                    <h6>Convenient Groom</h6>
+                  </div>
+                  <a href="#0" class="video-btn">
+                    <i class="far fa-play-circle"></i>
+                    <span class="before"></span>
+                    <span class="after"></span>
+                  </a>
+                  <div class="hover-content">
+                    <h2>Gravity <i class="fa fa-plus"></i></h2>
+                    <p>
+                      Radhe is a singing prodigy determined to follow in the
+                      classical footsteps of his grandfather.
+                    </p>
+                    <span class="tag">2 h 20 min</span>
+                    <span class="tag">2020</span>
+                    <span class="tag"><b>HD</b></span>
+                    <span class="tag"><b>16+</b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="viewed-item post-item">
+              <a href="#">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/2.jpg" alt="" />
+                  <div class="thumb-text">
+                    <span>Romance, 2014</span>
+                    <h6>Convenient Groom</h6>
+                  </div>
+                  <a href="#0" class="video-btn">
+                    <i class="far fa-play-circle"></i>
+                    <span class="before"></span>
+                    <span class="after"></span>
+                  </a>
+                  <div class="hover-content">
+                    <h2>Gravity <i class="fa fa-plus"></i></h2>
+                    <p>
+                      Radhe is a singing prodigy determined to follow in the
+                      classical footsteps of his grandfather.
+                    </p>
+                    <span class="tag">2 h 20 min</span>
+                    <span class="tag">2020</span>
+                    <span class="tag"><b>HD</b></span>
+                    <span class="tag"><b>16+</b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="viewed-item post-item">
+              <a href="#">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/3.jpg" alt="" />
+                  <div class="thumb-text">
+                    <span>Romance, 2014</span>
+                    <h6>Convenient Groom</h6>
+                  </div>
+                  <a href="#0" class="video-btn">
+                    <i class="far fa-play-circle"></i>
+                    <span class="before"></span>
+                    <span class="after"></span>
+                  </a>
+                  <div class="hover-content">
+                    <h2>Gravity <i class="fa fa-plus"></i></h2>
+                    <p>
+                      Radhe is a singing prodigy determined to follow in the
+                      classical footsteps of his grandfather.
+                    </p>
+                    <span class="tag">2 h 20 min</span>
+                    <span class="tag">2020</span>
+                    <span class="tag"><b>HD</b></span>
+                    <span class="tag"><b>16+</b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="viewed-item post-item">
+              <a href="#">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/4.jpg" alt="" />
+                  <div class="thumb-text">
+                    <span>Romance, 2014</span>
+                    <h6>Convenient Groom</h6>
+                  </div>
+                  <a href="#0" class="video-btn">
+                    <i class="far fa-play-circle"></i>
+                    <span class="before"></span>
+                    <span class="after"></span>
+                  </a>
+                  <div class="hover-content">
+                    <h2>Gravity <i class="fa fa-plus"></i></h2>
+                    <p>
+                      Radhe is a singing prodigy determined to follow in the
+                      classical footsteps of his grandfather.
+                    </p>
+                    <span class="tag">2 h 20 min</span>
+                    <span class="tag">2020</span>
+                    <span class="tag"><b>HD</b></span>
+                    <span class="tag"><b>16+</b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="viewed-item post-item">
+              <a href="#">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/5.jpg" alt="" />
+                  <div class="thumb-text">
+                    <span>Romance, 2014</span>
+                    <h6>Convenient Groom</h6>
+                  </div>
+                  <a href="#0" class="video-btn">
+                    <i class="far fa-play-circle"></i>
+                    <span class="before"></span>
+                    <span class="after"></span>
+                  </a>
+                  <div class="hover-content">
+                    <h2>Gravity <i class="fa fa-plus"></i></h2>
+                    <p>
+                      Radhe is a singing prodigy determined to follow in the
+                      classical footsteps of his grandfather.
+                    </p>
+                    <span class="tag">2 h 20 min</span>
+                    <span class="tag">2020</span>
+                    <span class="tag"><b>HD</b></span>
+                    <span class="tag"><b>16+</b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide viewed-slide">
+            <div class="viewed-item post-item">
+              <a href="#">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/6.jpg" alt="" />
+                  <div class="thumb-text">
+                    <span>Romance, 2014</span>
+                    <h6>Convenient Groom</h6>
+                  </div>
+                  <a href="#0" class="video-btn">
+                    <i class="far fa-play-circle"></i>
+                    <span class="before"></span>
+                    <span class="after"></span>
+                  </a>
+                  <div class="hover-content">
+                    <h2>Gravity <i class="fa fa-plus"></i></h2>
+                    <p>
+                      Radhe is a singing prodigy determined to follow in the
+                      classical footsteps of his grandfather.
+                    </p>
+                    <span class="tag">2 h 20 min</span>
+                    <span class="tag">2020</span>
+                    <span class="tag"><b>HD</b></span>
+                    <span class="tag"><b>16+</b></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next button-next"></div>
+        <div class="swiper-button-prev button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <!-- recently viewed ends  -->
+
+  <!-- comming soon area start -->
+  <div class="coming-soon bg_img">
+    <div class="theme-container">
+        <div class="section-wrapper">
+            <div class="movie-trailer">
+              <a href="https://www.youtube.com/embed/CsTyjmtq3PQ?autoplay=1&mute=1" data-rel="lightcase" autoplay="autoplay">
+                <i class="fa fa-play"></i>
+                <span class="before"></span>
+                <span class="after"></span>
+              </a>
+            </div>
+            <div class="movie-wrapper">
+              <span class="small-title">Comming Soon Movie</span>
+              <h1 class="title">Max Still</h1>
+              <ul class="countdown">
+                  <li>
+                      <h3 class="c-title"><span class="days">00</span></h3>
+                      <p class="days_text">Days</p>
+                  </li>
+                  <li>
+                      <h3 class="c-title"><span class="hours">00</span></h3>
+                      <p class="hours_text">Hours</p>
+                  </li>
+                  <li>
+                      <h3 class="c-title"><span class="minutes">00</span></h3>
+                      <p class="minu_text">minutes</p>
+                  </li>
+                  <li>
+                      <h3 class="c-title"><span class="seconds">00</span></h3>
+                      <p class="seco_text">seconds</p>
+                  </li>
+              </ul>
+              <form class="notify-form">
+                  <input type="text" placeholder="Get Notified by Email">
+                  <button type="submit">Notify Me</button>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div class="comming-overlay"></div>
+  </div>
+  <!-- comming soon area start -->
+
+  <!-- kids movie area start -->
+  <section class="kids-area">
+    <div class="theme-container">
+      <div class="section-wrapper">
+        <div class="wrap-menu">
+          <h4>Moviedom Kids</h4>
+          <nav>
+            <div class="nav" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">all Series</button>
+              <button class="nav-link" id="nav-animation-tab" data-bs-toggle="tab" data-bs-target="#nav-animation" type="button" role="tab" aria-controls="nav-animation" aria-selected="false">animation Series</button>
+              <button class="nav-link" id="nav-family-tab" data-bs-toggle="tab" data-bs-target="#nav-family" type="button" role="tab" aria-controls="nav-family" aria-selected="false">family Series</button>
+              <button class="nav-link" id="nav-grils-tab" data-bs-toggle="tab" data-bs-target="#nav-grils" type="button" role="tab" aria-controls="nav-grils" aria-selected="false">For Grils</button>
+              <button class="nav-link" id="nav-boys-tab" data-bs-toggle="tab" data-bs-target="#nav-boys" type="button" role="tab" aria-controls="nav-boys" aria-selected="false">For Boys</button>
+              <button class="nav-link" id="nav-animals-tab" data-bs-toggle="tab" data-bs-target="#nav-animals" type="button" role="tab" aria-controls="nav-animals" aria-selected="false">Speaking Animals</button>
+            </div>
+          </nav>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="all-tab">
+           <div class="kids-movie-gallery">
+             <div class="row">
+              <div class="col-lg-4 col-12 mb-2 mb-lg-0">
+               <a href="#0" class="d-block">
+                <div class="gallery-thumb style-one">
+                  <img src="assets/images/kids/img2.jpg" alt="">
+                  <button class="video-btn">
+                    <i class="far fa-play-circle"></i>
+                    <span class="before"></span>
+                    <span class="after"></span>
+                  </button>
+                  <div class="thumb-text">
+                    <span>Romance, 2014</span>
+                    <h6>Convenient Groom</h6>
+                  </div>
+                </div>
+               </a>
+              </div>
+              <div class="col-lg-8 col-12">
+                <div class="gallery-item">
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/02.jpg" alt="">
+                        <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/01.jpg" alt="">
+                        <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/03.jpg" alt="">
+                       <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/04.jpg" alt="">
+                       <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/05.jpg" alt="">
+                       <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/06.jpg" alt="">
+                       <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/07.jpg" alt="">
+                       <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-col">
+                    <a href="#0">
+                      <div class="gallery-thumb">
+                        <img src="assets/images/kids/03.jpg" alt="">
+                       <button class="video-btn">
+                          <i class="far fa-play-circle"></i>
+                          <span class="before"></span>
+                          <span class="after"></span>
+                        </button>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+          </div>
+          <div class="tab-pane fade" id="nav-animation" role="tabpanel" aria-labelledby="animation-tab">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, praesentium?</p>
+          </div>
+          <div class="tab-pane fade" id="nav-family" role="tabpanel" aria-labelledby="family-tab">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit magnam pariatur cumque omnis ratione exercitationem quasi soluta quaerat illo aspernatur quisquam sequi iure adipisci, doloribus praesentium inventore, ipsum, sed harum?</p>
+          </div>
+          <div class="tab-pane fade" id="nav-grils" role="tabpanel" aria-labelledby="grils-tab">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat aspernatur asperiores fugiat.</p>
+          </div>
+          <div class="tab-pane fade" id="nav-boys" role="tabpanel" aria-labelledby="boys-tab">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque beatae iusto maiores at dignissimos.</p>
+          </div>
+          <div class="tab-pane fade" id="nav-animals" role="tabpanel" aria-labelledby="animals-tab">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem vitae officiis provident quae quis iste?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- kids movie area ends  -->
+
+  <!-- subscrition area start -->
+  <section class="actors-area pt-0">
+    <div class="theme-container">
+      <div class="section-header-style">
+        <h4>Actors</h4>
+      </div>
+      <div class="section-wrapper">
+        <div class="actors-home-slider swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/1.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/2.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/3.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/4.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/5.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/6.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/7.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="post-item">
+                <div class="item-thumb">
+                  <img src="assets/images/recently/8.jpg" alt="">
+                  <div class="thumb-text">
+                    <a href="#0"><h6>Amidiatika</h6></a>
+                    <p>More then 300 Subscriber</p>
+                    <button type="button" class="btn btn-outline"><span>Watch</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next button-next"></div>
+          <div class="swiper-button-prev button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- subscrition area ends  -->
+
+  <!-- footer area start -->
+  <footer class="footer-area">
+    <div class="foot-overlay"></div>
+    <div class="theme-container">
+      <div class="flex-parent">
+        <div class="flex-child item1">
+           <a href="index.html"><img class="logo" src="assets/images/logo/logo.png" alt=""></a>
+           <p>5th Avenue st, Modhubag<br>
+          Dhaka Bangladesh, G- 1239</p>
+          <p>Call us: <a href="#">(+880) 1768-162459</a></p>
+        </div>
+        <div class="flex-child item2">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Moviedom</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="flex-child item3">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Use</a></li> 
+            <li><a href="#">Privacy Policy</a></li>	
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+        <div class="flex-child item4">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="#">My Account</a></li> 
+            <li><a href="#">Watchlist</a></li>	
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">User Guide</a></li>
+          </ul>
+        </div>
+        <div class="flex-child item5">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our newsletter system now <br> to get latest news from us.</p>
+          <form action="#">
+            <input type="text" placeholder="Enter your email...">
+          </form>
+          <button type="button" class="btn"><span>Subscribe now </span><span><i class="fa fa-angle-right ms-2"></i></span></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="ft-copyright">
+      <div class="ft-left">
+        <p>© 2022 <a href="#0">Moviedom</a>. All Rights Reserved. Developed By <a href="#0">Moviedom</a></p>
+      </div>
+  </div>
+  <!-- footer area ends  -->
+
+  <!-- login form -->
+  <div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content relative">
+            <div class="modal-header">
+                <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+                <i class="input-icon field-icon fa">
+                <img src="https://bookingcore.org/images/ico_close.svg" alt="close">
+                </i>
+                </span>
+            </div>
+            <div class="modal-body relative">
+                <div class="social-login">
+                  <button type="button" class="btn-facebook"><i class="fab fa-facebook me-4"></i>Login With Facebook</button>
+                  <button type="button" class="btn-google"><i class="fab fa-google-plus me-4"></i>Login With Facebook</button>
+                </div>
+                <form class="bravo-form-login" method="POST" action="https://bookingcore.org/en/login">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+                        <i class="input-icon fa fa-envelope-o"></i>
+                        <span class="invalid-feedback error error-email"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+                        <i class="input-icon fa fa-lock"></i>
+                        <span class="invalid-feedback error error-password"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between">
+                        <label for="remember-me" class="mb0">
+                        <input type="checkbox" name="remember" id="remember-me" value="1"> Remember me <span class="checkmark fcheckbox"></span>
+                        </label>
+                        <a href="forgot.html">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <div class="error message-error invalid-feedback"></div>
+                    <div class="form-group">
+                        <button class="btn" type="submit"><span>Sign In</span></button>
+                    </div>
+                    <div class="c-grey font-medium f14 text-center"> Do not have an account? <a href="#0" data-bs-target="#register" data-bs-toggle="modal">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- login form -->
+
+  <!-- ragister form -->
+  <div class="modal fade login" id="register" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content relative">
+              <div class="modal-header">
+                  <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+                      <i class="input-icon field-icon fa">
+                      <img src="https://bookingcore.org/images/ico_close.svg" alt="close"></i>
+                  </span>
+              </div>
+              <div class="modal-body">
+                  <form class="form bravo-form-register" method="post"> 
+                      <div class="row">
+                          <div class="col-lg-6 col-md-12">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="First Name">
+                                  <i class="input-icon field-icon fa"><img src="https://bookingcore.org/images/ico_fullname_signup.svg"></i>
+                                  <span class="invalid-feedback error error-first_name"></span>
+                              </div>
+                          </div>
+                          <div class="col-lg-6 col-md-12">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" name="last_name" autocomplete="off" placeholder="Last Name">
+                                  <i class="input-icon field-icon fa"><img src="https://bookingcore.org/images/ico_fullname_signup.svg"></i>
+                                  <span class="invalid-feedback error error-last_name"></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email address">
+                          <i class="input-icon field-icon fa"><img src="https://bookingcore.org/images/ico_email_login_form.svg"></i>
+                          <span class="invalid-feedback error error-email"></span>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password">
+                          <i class="input-icon field-icon fa"><img src="https://bookingcore.org/images/ico_pass_login_form.svg"></i>
+                          <span class="invalid-feedback error error-password"></span>
+                      </div>
+                      <div class="form-group">
+                          <label for="term">
+                          <input id="term" type="checkbox" name="term" class="mr5">
+                          I have read and accept the <a href='privacy&policy.html' target='_blank'>Terms and Privacy Policy</a>
+                          <span class="checkmark fcheckbox"></span>
+                          </label>
+                          <div><span class="invalid-feedback error error-term"></span></div>
+                      </div>
+                      <div class="error message-error invalid-feedback"></div>
+                      <div class="form-group">
+                          <button type="submit" class="btn"><span>Sign Up</span></button>
+                      </div>
+                      <div class="c-grey text-center">
+                          Already have an account?
+                          <a href="#0" data-bs-target="#login" data-bs-toggle="modal">Log In</a>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ragister form -->
+  
+  <!-- optional js -->
+  <script src="assets/js/vendors.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <script src="assets/js/lightcase.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/pages_js/home.js"></script>
+  <script src="assets/js/function.js"></script>
+
+</body>
+</html>

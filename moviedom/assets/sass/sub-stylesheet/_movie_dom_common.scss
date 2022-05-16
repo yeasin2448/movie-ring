@@ -1,0 +1,14 @@
+body,html{
+    color: white;
+    background: #161616;
+}
+
+/**
+----------sections-----------
+*/
+
+section{
+    &:not(.banner-area) {
+        padding: $section-padding 0;
+    }
+}

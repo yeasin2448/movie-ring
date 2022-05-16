@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- lightcase css -->
+    <link rel="stylesheet" href="assets/css/lightcase.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- font css -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <!-- custom -->
+    <link rel="stylesheet" href="assets/sass/style.css" />
+
+    <title>Moviedom</title>
+  </head>
+
+  <body>
+    <!--preloading-->
+    <div id="preloader">
+      <img
+        class="logo"
+        src="assets/images/logo/logo.png"
+        alt=""
+        width="119"
+        height="58"
+      />
+      <div id="status">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!--end of preloading-->
+
+    <!-- header area start -->
+    <header>
+      <div class="header-sticky">
+        <div class="theme-container">
+          <div class="header-item">
+            <div class="logo-area">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="assets/images/logo/logo.png" alt="logo-image" />
+                </a>
+              </div>
+              <div class="main-menu">
+                <ul class="menu-list">
+                  <li><a href="all-movie.html">Movies</a></li>
+                  <li>
+                    <a href="#0" class="active">Genre</a>
+                    <div class="sub-menu">
+                      <ul class="sub-list genre" id="myDIV">
+                        <li><a class="" href="#0">Action</a></li>
+                        <li><a href="#0">Adventure</a></li>
+                        <li><a href="#0">Animation</a></li>
+                        <li><a href="#0">Biography</a></li>
+                        <li><a href="#0">Costume</a></li>
+                        <li><a href="#0">Comedy</a></li>
+                        <li><a href="#0">Crime</a></li>
+                        <li><a href="#0">Documentary</a></li>
+                        <li><a href="#0">Drama</a></li>
+                        <li><a href="#0">Family</a></li>
+                        <li><a href="#0">Fantasy</a></li>
+                        <li><a href="#0">Game-Show</a></li>
+                        <li><a href="#0">History</a></li>
+                        <li><a href="#0">Horror</a></li>
+                        <li><a href="#0">Kungfu</a></li>
+                        <li><a href="#0">Music</a></li>
+                        <li><a href="#0">Mystery</a></li>
+                        <li><a href="#0">Reality-TV</a></li>
+                        <li><a href="#0">Romance</a></li>
+                        <li><a href="#0">Sci-Fi</a></li>
+                        <li><a href="#0">Sport</a></li>
+                        <li><a href="#0">Thriller</a></li>
+                        <li><a href="#0">TV Show</a></li>
+                        <li><a href="#0">War</a></li>
+                        <li><a href="#0">Western</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">Country</a></li>
+                  <li><a href="#0">Tv Series</a></li>
+                  <li><a href="#0">Games</a></li>
+                  <li><a href="#0">Software</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="user-item">
+              <div class="item-list">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-target="#login"
+                  data-bs-toggle="modal"
+                >
+                  <span>Login</span>
+                </button>
+                <button type="button" class="search-bar">
+                  <i class="fa fa-search"></i>
+                </button>
+                <div class="search-input">
+                  <div class="search-input-icon">
+                    <i class="fa fa-search info"></i>
+                  </div>
+                  <input
+                    class="input"
+                    type="text"
+                    placeholder="Explore Info..."
+                    tabindex="-1"
+                    data-search="template-list"
+                  />
+                  <div class="search-input-close">
+                    <i class="fa fa-times"></i>
+                  </div>
+                  <ul class="search-list search-list-main"></ul>
+                </div>
+                <button type="button" class="movie-sliderBtn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="movie-sidebar">
+                  <div class="sidebar-title">
+                    <h4>New Filims</h4>
+                    <button type="button" id="croseBtn">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                  <ul class="sidebar-menulist" id="accordionExample">
+                    <li id="headingOne">
+                      <a
+                        href="#collapseOne"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                        >Home</a
+                      >
+                      <div
+                        id="collapseOne"
+                        class="collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="movie.html">Movies</a></li>
+                          <li><a href="all-movie.html">All Movies</a></li>
+                          <li><a href="profile.html">Profile</a></li>
+                          <li><a href="preference.html">Preference</a></li>
+                          <li><a href="tv-serial.html">TV Show</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">About</a></li>
+                    <li id="headingTwo">
+                      <a
+                        href="#collapseTwo"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                        >Blogs</a
+                      >
+                      <div
+                        id="collapseTwo"
+                        class="collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="#0">Item One</a></li>
+                          <li><a href="#0">Lord of</a></li>
+                          <li><a href="#0">Item Three</a></li>
+                          <li><a href="#0">Item Four</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">New Filims</a></li>
+                    <li><a href="#0">Old Filims</a></li>
+                    <li id="headingThree">
+                      <a
+                        href="#collapseThree"
+                        class="drop-item collapsed"
+                        data-bs-toggle="collapse"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                        >Upcoming Movies</a
+                      >
+                      <div
+                        id="collapseThree"
+                        class="collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <ul class="submenu">
+                          <li><a href="#0">Jhon Wick</a></li>
+                          <li><a href="#0">Return Of five</a></li>
+                          <li><a href="#0">Ded Army</a></li>
+                          <li><a href="#0">King Kong</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#0">Action Movie</a></li>
+                    <li><a href="#0">Thriller Movie</a></li>
+                    <li><a href="#0">Most Evended</a></li>
+                  </ul>
+                  <!-- <ul class="filims-list">
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/01.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Spider Man</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/02.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Army of the dead</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/03.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Dora</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul> -->
+                </div>
+              </div>
+            </div>
+            <div class="body-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area ends  -->
+
+    <!-- Movie Section start -->
+    <section class="movie-details-section banner-area">
+      <!-- Media Content -->
+      <div class="media-contents">
+        <!-- Cover Image -->
+        <img
+          src="https://www.themoviedb.org/t/p/original/gespPE81A2RYvMxl9XaVNvIgevS.jpg"
+          alt=" movie-cover-image"
+          f
+          class="movie-cover media-content"
+        />
+        <!-- Trailler -->
+        <video class="media-content movie-trailer" preload="auto">
+          <source
+            src="http://103.82.8.194/moviedom/videos/1.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!-- Details Box Start -->
+      <div class="details-box">
+        <!-- Movie details box Start -->
+        <div class="theme-container pb-4">
+          <!-- cast-crew-tabs -->
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="overview justify-content-end justify-content-md-center">
+              <div>
+                <ul class="tags">
+                  <li class="tag">Drama</li>
+                  <li class="tag">Horror</li>
+                  <li class="tag">Romantic</li>
+                </ul>
+                <span class="movie-duration ms-3">
+                  <i class="me-2 fas fa-clock"></i>
+                  1h 35m
+                </span>
+              </div>
+              <h2 class="movie-title">Dexter: New Blood (2021)</h2>
+              <!-- <div>
+                        <h4 class="movie-industry d-inline-block">Hollywood</h4>
+                        <h5 class="d-inline-block ms-3 mb-0">2021</h5>
+                    </div> -->
+              <ul class="config-list mt-2 mb-3">
+                <li class="config">Hollywood</li>
+                <li class="config">1080P</li>
+                <li class="config">HD</li>
+                <li class="config">14+</li>
+                <li class="config">ENG</li>
+                <li class="config">MP4</li>
+                <li class="config">1.3GB</li>
+              </ul>
+              <div class="des-title">
+                <h4 class="mb-0">Overview:</h4>
+              </div>
+              <p class="mt-1 mb-0 movie-des">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur impedit pariatur quidem ea quaerat eaque animi
+                tempora, placeat cumque blanditiis, voluptates soluta enim quis.
+                Placeat blanditiis voluptate similique autem quo?
+              </p>
+              <a href="#0" class="des-more">See More</a>
+              <!-- <div class="action-btns mb-2">
+                        <i class="me-2 action-btn far fa-heart"></i>
+                        <i class="me-2 action-btn fas fa-plus"></i>
+                        <i class="me-2 action-btn far fa-star"></i>
+                    </div> -->
+              <div class="btns">
+                <div class="action-btns">
+                  <i class="me-2 action-btn far fa-heart"></i>
+                  <i class="me-2 action-btn fas fa-plus"></i>
+                  <i class="me-2 action-btn far fa-star"></i>
+                </div>
+                <button class="watch-btn" type="button">
+                  <span>Watch Trailer</span>
+                  <i class="ms-2 far fa-play-circle"></i>
+                </button>
+                <button class="btn btn-download p-2 icon-rounded-btn center">
+                  <i class="fas fa-download"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="col d-flex flex-column justify-content-center content-ceneter"
+            >
+              <div class="video-controle-box my-3 my-md-0">
+                <a href="#0">
+                  <i class="video-controle-button fas fa-play"></i>
+                  <span class="before"></span>
+                  <span class="after"></span>
+                </a>
+                <h6>Watch Movie Now!</h6>
+                <!-- <i class="video-sound-button fas fa-volume-mute"></i> -->
+              </div>
+            </div>
+          </div>
+          <!-- Cast-crew-names -->
+          <div class="details-content row mt-4 align-items-end">
+            <div class="people col-12 col-md-6">
+              <div class="series-cast">
+                <h4>Series Cast</h4>
+                <div class="actor-wrapper">
+                  <div dir="rtl" class="cast-slider swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/01.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/02.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/03.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/04.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/04.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/06.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/07.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/08.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/09.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cast-thumb">
+                          <img src="assets/images/actor/10.jpg" alt="" />
+                        </div>
+                        <div class="cast-text">
+                          <h6>Tom</h6>
+                          <h6>Hiddleston</h6>
+                          <p>Loki</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next style-next"></div>
+                    <div class="swiper-button-prev style-prev"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Cast</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">Crew</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content ms-3" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="row row-cols-2 row-cols-lg-3 g-2">
+                                <div class="col">
+                                  <a href="#0" class="active">Ryan Gosting</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">Jason Statham</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">Jason Momoa</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">Tony Stark</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">brian diaz</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="row row-cols-3 g-2">
+                                <div class="col">
+                                  <a href="#0">Dani Johnson</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">Bebe Rexha</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">Billie Eilish</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">Taylor Swift</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">karolina protsenko</a>
+                                </div>
+                                <div class="col">
+                                  <a href="#0">karol g</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+            <div
+              class="count_overview col-12 col-md-6 d-flex flex-row flex-wrap justify-content-evenly align-content-end"
+            >
+              <div class="IMDB">
+                <p>IMDB</p>
+                <h2>8.5</h2>
+              </div>
+              <div class="metacritic">
+                <p>METACRITIC</p>
+                <h2>85%</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Movie Details Box End -->
+      </div>
+      <!--Detials Box End  -->
+    </section>
+    <!-- Movie Section End -->
+
+    <!-- Comment Section Start -->
+    <section class="comment-section" id="netflix-area">
+      <div class="theme-container">
+        <div class="row g-3">
+          <div class="col-12 col-md-8">
+            <h3 class="bar-title">
+              <i class="fas fa-comment-alt"></i> Comments
+            </h3>
+            <div class="write-comment d-none">
+              <form>
+                <div class="write-comment-input">
+                  <textarea
+                    class="comment-box"
+                    name="comment"
+                    placeholder="Your Comment"
+                    rows="4"
+                  ></textarea>
+                  <button type="submit" class="btn">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- new comment -->
+            <div class="conmment-list pt-0">
+              <div class="list-themble">
+                <div class="list-thumb">
+                  <img src="assets/images/commets/01.jpg" alt="" />
+                </div>
+                <div class="list-input">
+                  <input
+                    type="text"
+                    class="form-contorl"
+                    id="newMessage"
+                    placeholder="New message for Angela"
+                  />
+                </div>
+              </div>
+              <ul class="list-item">
+                <li>
+                  <div class="post-item">
+                    <div class="item-title">
+                      <h4>Angele Wang Left a Comment :</h4>
+                      <p class="time" id="commentTime">8:30 AM</p>
+                    </div>
+                    <div class="item-inner">
+                      <div class="commenter">
+                        <div class="commenter-thumb">
+                          <img src="assets/images/commets/02.jpg" alt="" />
+                        </div>
+                        <div class="commenter-text">
+                          <p>
+                            <strong>Angela</strong> Hi
+                            <a href="#0">@andrewelein.</a> We can make this
+                            order. Please Note That, Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eveniet ea doloremque
+                            necessitatibus hic in. Repellat architecto accusamus
+                            nam quo quasi.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="comment-reply">
+                        <div class="reply-thumb">
+                          <img src="assets/images/commets/01.jpg" alt="" />
+                        </div>
+                        <div class="reply-input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="replayComment"
+                            placeholder="@angela_wang"
+                          />
+                          <i class="fa fa-arrow-up"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="post-item">
+                    <div class="item-title">
+                      <h4>
+                        Stev Max Left a Comment :
+                        <a href="#0" class="">Track Jacket #S00342</a>
+                      </h4>
+                      <p class="time" id="commentTime">9:30 AM</p>
+                    </div>
+                    <div class="item-inner">
+                      <div class="commenter">
+                        <div class="commenter-thumb">
+                          <img src="assets/images/commets/03.jpg" alt="" />
+                        </div>
+                        <div class="commenter-text">
+                          <p>
+                            <strong>Angela</strong> Hi
+                            <a href="#0">@andrewelein.</a> We can make this
+                            order. Please Note That, Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eveniet ea doloremque
+                            necessitatibus hic in. Repellat architecto accusamus
+                            nam quo quasi.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="comment-reply">
+                        <div class="reply-thumb">
+                          <img src="assets/images/commets/04.jpg" alt="" />
+                        </div>
+                        <div class="reply-input">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="replayComment"
+                            placeholder="Add Reply"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="post-item">
+                    <div class="item-title">
+                      <h4>Angela Wana <strong>Viewed</strong> The Link</h4>
+                      <p class="time" id="commentTime">9:30 AM</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="post-item">
+                    <div class="item-title">
+                      <h4>
+                        Share with <strong>Angela Wana</strong> from washing
+                      </h4>
+                      <p class="time" id="commentTime">9:30 AM</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- <div id="comments" class="comments">
+                    <ul class="comment-list">
+                        <li class="comment" id="li-comment-1">
+                            <div class="com-thumb">
+                                <img alt="" src="assets/images/commets/01.jpg" class="avatar avatar-90 photo" height="90" width="90">          
+                            </div>
+                            <div class="com-content">
+                                <div class="com-title">
+                                    <div class="com-title-meta">
+                                        <h4><a href="http://Sk" rel="external nofollow" class="url">Robot Linsamu</a></h4>
+                                        <span> October 5, 2018 at 12:41 pm </span>
+                                    </div>
+                                    <span class="reply">
+                                        <a rel="nofollow" class="comment-reply-link" href="#"><i class="fas fa-reply-all"></i>Reply</a>        
+                                    </span>
+                                </div>
+                                <p>The inner sanctuary, I throw myself down among the tall grass bye the trckli stream and, as I lie close to the earth</p>
+                                <div class="reply-btn"></div>
+                            </div>
+                            <ul class="comment-list">
+                                <li class="comment" id="li-comment-2">
+                                    <div class="com-thumb">
+                                        <img alt="" src="assets/images/commets/02.jpg" class="avatar avatar-90 photo" height="90" width="90">
+                                    </div>
+                                    <div class="com-content">
+                                        <div class="com-title">
+                                            <div class="com-title-meta">
+                                                <h4><a href="http://Sk" rel="external nofollow" class="url">Willam Smith</a></h4>
+                                                <span> October 5, 2018 at 12:41 pm </span>
+                                            </div>
+                                            <span class="reply">
+                                                <a rel="nofollow" class="comment-reply-link" href="#"><i class="fas fa-reply-all"></i>Reply</a>                        
+                                            </span>
+                                        </div>
+                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings spring which I enjoy with my whole heart</p>
+                                        <div class="reply-btn"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="comment" id="li-comment-3">
+                            <div class="com-thumb">
+                                <img alt="" src="assets/images/commets/03.jpg" class="avatar avatar-90 photo" height="90" width="90">          
+                            </div>
+                            <div class="com-content">
+                                <div class="com-title">
+                                    <div class="com-title-meta">
+                                        <h4><a href="http://Sk" rel="external nofollow" class="url">Linsamu Faith</a></h4>
+                                        <span> October 5, 2018 at 12:41 pm </span>
+                                    </div>
+                                    <span class="reply">
+                                        <a rel="nofollow" class="comment-reply-link" href="#"><i class="fas fa-reply-all"></i>Reply</a>
+                                    </span>
+                                </div>
+                                <p>The inner sanctuary, I throw myself down among the tall grass bye the trckli stream and, as I lie close to the earth</p>
+                                <div class="reply-btn"></div>
+                            </div>
+                        </li>
+                    </ul>
+                  </div> -->
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="bar-title">Recent Movies</h3>
+            <div class="recent-movies">
+              <div class="row row-cols-2 row-cols-xxl-3 g-3">
+                <div class="col viewed-item viewed-items post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img
+                        src="https://iitdom.com/slider/assets/images/recently/5.jpg"
+                        alt=""
+                      />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6 class="dotted-text">Convenient Groom</h6>
+                      </div>
+                      <button type="button" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col viewed-item viewed-items post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img
+                        src="https://iitdom.com/slider/assets/images/recently/5.jpg"
+                        alt=""
+                      />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6 class="dotted-text">Convenient Groom</h6>
+                      </div>
+                      <button type="button" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="col viewed-item viewed-items post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img
+                        src="https://iitdom.com/slider/assets/images/recently/5.jpg"
+                        alt=""
+                      />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6 class="dotted-text">Convenient Groom</h6>
+                      </div>
+                      <button type="button" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Comment Section End -->
+
+    <!-- recently viewed start -->
+    <section class="recently-area pt-0">
+      <div class="theme-container">
+        <div class="section-header section-header-style">
+          <h4>Related Movies</h4>
+          <a href="#0">See All <i class="fa fa-angle-double-right ms-1"></i></a>
+        </div>
+        <div class="section-wrapper">
+          <div class="viewed-slider viewed-style-one swiper my-swiper">
+            <div class="swiper-wrapper viewed-wrapper">
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/1.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Gravity <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/2.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Gravity <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/3.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Gravity <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/4.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Gravity <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/5.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Gravity <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide viewed-slide">
+                <div class="viewed-item post-item">
+                  <a href="#">
+                    <div class="item-thumb">
+                      <img src="assets/images/recently/6.jpg" alt="" />
+                      <div class="thumb-text">
+                        <span>Romance, 2014</span>
+                        <h6>Convenient Groom</h6>
+                      </div>
+                      <a href="#0" class="video-btn">
+                        <i class="far fa-play-circle"></i>
+                        <span class="before"></span>
+                        <span class="after"></span>
+                      </a>
+                      <div class="hover-content">
+                        <h2>Gravity <i class="fa fa-plus"></i></h2>
+                        <p>
+                          Radhe is a singing prodigy determined to follow in the
+                          classical footsteps of his grandfather.
+                        </p>
+                        <span class="tag">2 h 20 min</span>
+                        <span class="tag">2020</span>
+                        <span class="tag"><b>HD</b></span>
+                        <span class="tag"><b>16+</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next button-next"></div>
+            <div class="swiper-button-prev button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- recently viewed ends  -->
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+      <div class="foot-overlay"></div>
+      <div class="theme-container">
+        <div class="flex-parent">
+          <div class="flex-child item1">
+            <a href="index.html"
+              ><img class="logo" src="assets/images/logo/logo.png" alt=""
+            /></a>
+            <p>
+              5th Avenue st, Modhubag<br />
+              Dhaka Bangladesh, G- 1239
+            </p>
+            <p>Call us: <a href="#">(+880) 1768-162459</a></p>
+          </div>
+          <div class="flex-child item2">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Moviedom</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="flex-child item3">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+          <div class="flex-child item4">
+            <h4>Account</h4>
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Watchlist</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">User Guide</a></li>
+            </ul>
+          </div>
+          <div class="flex-child item5">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to our newsletter system now <br />
+              to get latest news from us.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Enter your email..." />
+            </form>
+            <button type="button" class="btn">
+              <span>Subscribe now </span
+              ><span><i class="fa fa-angle-right ms-2"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="ft-copyright">
+      <div class="ft-left">
+        <p>
+          © 2022 <a href="#0">Moviedom</a>. All Rights Reserved. Developed By
+          <a href="#0">Moviedom</a>
+        </p>
+      </div>
+    </div>
+    <!-- footer area ends  -->
+
+    <!-- login form -->
+    <div
+      class="modal fade login"
+      id="login"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content relative">
+          <div class="modal-header">
+            <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+              <i class="input-icon field-icon fa">
+                <img
+                  src="https://bookingcore.org/images/ico_close.svg"
+                  alt="close"
+                />
+              </i>
+            </span>
+          </div>
+          <div class="modal-body relative">
+            <div class="social-login">
+              <button type="button" class="btn-facebook">
+                <i class="fab fa-facebook me-4"></i>Login With Facebook
+              </button>
+              <button type="button" class="btn-google">
+                <i class="fab fa-google-plus me-4"></i>Login With Facebook
+              </button>
+            </div>
+            <form
+              class="bravo-form-login"
+              method="POST"
+              action="https://bookingcore.org/en/login"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="email"
+                  autocomplete="off"
+                  placeholder="Email address"
+                />
+                <i class="input-icon fa fa-envelope-o"></i>
+                <span class="invalid-feedback error error-email"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  autocomplete="off"
+                  placeholder="Password"
+                />
+                <i class="input-icon fa fa-lock"></i>
+                <span class="invalid-feedback error error-password"></span>
+              </div>
+              <div class="form-group">
+                <div class="d-flex justify-content-between">
+                  <label for="remember-me" class="mb0">
+                    <input
+                      type="checkbox"
+                      name="remember"
+                      id="remember-me"
+                      value="1"
+                    />
+                    Remember me <span class="checkmark fcheckbox"></span>
+                  </label>
+                  <a href="forgot.html">Forgot Password?</a>
+                </div>
+              </div>
+              <div class="error message-error invalid-feedback"></div>
+              <div class="form-group">
+                <button class="btn" type="submit"><span>Sign In</span></button>
+              </div>
+              <div class="c-grey font-medium f14 text-center">
+                Do not have an account?
+                <a href="#0" data-bs-target="#register" data-bs-toggle="modal"
+                  >Sign Up</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login form -->
+
+    <!-- ragister form -->
+    <div
+      class="modal fade login"
+      id="register"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content relative">
+          <div class="modal-header">
+            <span class="c-pointer" data-bs-dismiss="modal" aria-label="Close">
+              <i class="input-icon field-icon fa">
+                <img
+                  src="https://bookingcore.org/images/ico_close.svg"
+                  alt="close"
+              /></i>
+            </span>
+          </div>
+          <div class="modal-body">
+            <form class="form bravo-form-register" method="post">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="first_name"
+                      autocomplete="off"
+                      placeholder="First Name"
+                    />
+                    <i class="input-icon field-icon fa"
+                      ><img
+                        src="https://bookingcore.org/images/ico_fullname_signup.svg"
+                    /></i>
+                    <span
+                      class="invalid-feedback error error-first_name"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="last_name"
+                      autocomplete="off"
+                      placeholder="Last Name"
+                    />
+                    <i class="input-icon field-icon fa"
+                      ><img
+                        src="https://bookingcore.org/images/ico_fullname_signup.svg"
+                    /></i>
+                    <span class="invalid-feedback error error-last_name"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  autocomplete="off"
+                  placeholder="Email address"
+                />
+                <i class="input-icon field-icon fa"
+                  ><img
+                    src="https://bookingcore.org/images/ico_email_login_form.svg"
+                /></i>
+                <span class="invalid-feedback error error-email"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  autocomplete="off"
+                  placeholder="Password"
+                />
+                <i class="input-icon field-icon fa"
+                  ><img
+                    src="https://bookingcore.org/images/ico_pass_login_form.svg"
+                /></i>
+                <span class="invalid-feedback error error-password"></span>
+              </div>
+              <div class="form-group">
+                <label for="term">
+                  <input id="term" type="checkbox" name="term" class="mr5" />
+                  I have read and accept the
+                  <a href="privacy&policy.html" target="_blank"
+                    >Terms and Privacy Policy</a
+                  >
+                  <span class="checkmark fcheckbox"></span>
+                </label>
+                <div>
+                  <span class="invalid-feedback error error-term"></span>
+                </div>
+              </div>
+              <div class="error message-error invalid-feedback"></div>
+              <div class="form-group">
+                <button type="submit" class="btn"><span>Sign Up</span></button>
+              </div>
+              <div class="c-grey text-center">
+                Already have an account?
+                <a href="#0" data-bs-target="#login" data-bs-toggle="modal"
+                  >Log In</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ragister form -->
+
+    <!-- optional js -->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/tilt.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/pages_js/movie.js"></script>
+    <script src="assets/js/function.js"></script>
+
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".viewed-items"), {
+        max: 25,
+        speed: 400,
+        scale: 1.1,
+        perspective: 500,
+        // glare: true,
+        // maxGlare: .5
+      });
+    </script>
+  </body>
+</html>

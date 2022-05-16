@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- font css -->
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <!-- custom -->
+  <link rel="stylesheet" href="assets/sass/style.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <title>Moviedom</title>
+</head>
+
+<body>
+
+  <!-- header area start -->
+  <header>
+    <div class="header-sticky">
+      <div class="theme-container">
+        <div class="header-item">
+          <div class="logo-area">
+            <div class="logo">
+              <a href="#0">
+                <img src="assets/images/logo/logo.png" alt="logo-image">
+              </a>
+            </div>
+            <div class="main-menu">
+              <ul class="menu-list">
+                <li><a href="#0">Movies</a></li>
+                <li>
+                  <a href="#0" class="active">Genre</a>
+                  <div class="sub-menu">
+                    <ul class="sub-list genre" id="myDIV">
+                      <li> <a class="" href="#0">Action</a> </li>
+                      <li> <a href="#0">Adventure</a> </li>
+                      <li> <a href="#0">Animation</a> </li>
+                      <li> <a href="#0">Biography</a> </li>
+                      <li> <a href="#0">Costume</a> </li>
+                      <li> <a href="#0">Comedy</a> </li>
+                      <li> <a href="#0">Crime</a> </li>
+                      <li> <a href="#0">Documentary</a> </li>
+                      <li> <a href="#0">Drama</a> </li>
+                      <li> <a href="#0">Family</a> </li>
+                      <li> <a href="#0">Fantasy</a> </li>
+                      <li> <a href="#0">Game-Show</a> </li>
+                      <li> <a href="#0">History</a> </li>
+                      <li> <a href="#0">Horror</a> </li>
+                      <li> <a href="#0">Kungfu</a> </li>
+                      <li> <a href="#0">Music</a> </li>
+                      <li> <a href="#0">Mystery</a> </li>
+                      <li> <a href="#0">Reality-TV</a> </li>
+                      <li> <a href="#0">Romance</a> </li>
+                      <li> <a href="#0">Sci-Fi</a> </li>
+                      <li> <a href="#0">Sport</a> </li>
+                      <li> <a href="#0">Thriller</a> </li>
+                      <li> <a href="#0">TV Show</a> </li>
+                      <li> <a href="#0">War</a> </li>
+                      <li> <a href="#0">Western</a> </li>
+                    </ul>    
+                  </div>
+                </li>
+                <li><a href="#0">Country</a></li>
+                <li><a href="#0">Tv Series</a></li>
+                <li><a href="#0">Games</a></li>
+                <li><a href="#0">Software</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="user-item">
+            <div class="item-list">
+              <button type="button"class="btn"><span>Login</span></button>
+              <button type="button" class="search-bar"><i class="fa fa-search"></i></button>
+              <div class="search-input">
+                <div class="search-input-icon"><i class="fa fa-search info"></i></div>
+                <input class="input" type="text" placeholder="Explore Info..." tabindex="-1"
+                  data-search="template-list">
+                <div class="search-input-close"><i class="fa fa-times"></i></div>
+                <ul class="search-list search-list-main"></ul>
+              </div>
+              <button type="button" class="movie-sliderBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="movie-sidebar">
+                <div class="sidebar-title">
+                  <h4>New Filims</h4>
+                  <button type="button" id="croseBtn"><i class="fa fa-times"></i></button>
+                </div>
+                <ul class="sidebar-menulist" id="accordionExample">
+                  <li id="headingOne">
+                    <a href="#collapseOne" class="drop-item collapsed" data-bs-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseOne">Home</a>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <ul class="submenu">
+                        <li><a href="#0">Item One</a></li>
+                        <li><a href="#0">Lord of</a></li>
+                        <li><a href="#0">Item One</a></li>
+                        <li><a href="#0">Item One</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">About</a></li>
+                  <li id="headingTwo">
+                    <a href="#collapseTwo" class="drop-item collapsed" data-bs-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseTwo">Blogs</a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <ul class="submenu">
+                        <li><a href="#0">Item One</a></li>
+                        <li><a href="#0">Lord of</a></li>
+                        <li><a href="#0">Item Three</a></li>
+                        <li><a href="#0">Item Four</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">New Filims</a></li>
+                  <li><a href="#0">Old Filims</a></li>
+                  <li id="headingThree">
+                    <a href="#collapseThree" class="drop-item collapsed" data-bs-toggle="collapse" aria-expanded="false"
+                      aria-controls="collapseThree">Upcoming Movies</a>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <ul class="submenu">
+                        <li><a href="#0">Jhon Wick</a></li>
+                        <li><a href="#0">Return Of five</a></li>
+                        <li><a href="#0">Ded Army</a></li>
+                        <li><a href="#0">King Kong</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#0">Action Movie</a></li>
+                  <li><a href="#0">Thriller Movie</a></li>
+                  <li><a href="#0">Most Evended</a></li>
+                </ul>
+                <!-- <ul class="filims-list">
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/01.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Spider Man</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/02.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Army of the dead</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="filim-thumb">
+                      <img src="assets/images/new-movie/03.jpg" alt="">
+                      <div class="rating">
+                        <span>Rating</span>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star"></i></button>
+                        <button type="button"><i class="fa fa-star-half"></i></button>
+                      </div>
+                      <div class="movie-naming">
+                        <h6>Dora</h6>
+                        <span>2021</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+          <div class="body-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header area ends  -->
+
+  <!-- comming soon area start -->
+  <div class="coming-soon bg_img">
+    <div class="theme-container">
+        <div class="section-wrapper">
+            <span class="small-title">Comming Soon Movie</span>
+            <h1 class="title">Max Still</h1>
+            <ul class="countdown">
+                <li>
+                    <h3 class="c-title"><span class="days">00</span></h3>
+                    <p class="days_text">Days</p>
+                </li>
+                <li>
+                    <h3 class="c-title"><span class="hours">00</span></h3>
+                    <p class="hours_text">Hours</p>
+                </li>
+                <li>
+                    <h3 class="c-title"><span class="minutes">00</span></h3>
+                    <p class="minu_text">minutes</p>
+                </li>
+                <li>
+                    <h3 class="c-title"><span class="seconds">00</span></h3>
+                    <p class="seco_text">seconds</p>
+                </li>
+            </ul>
+            <form class="notify-form">
+                <input type="text" placeholder="Get Notified by Email">
+                <button type="submit">Notify Me</button>
+            </form>
+        </div>
+    </div>
+    <div class="comming-overlay"></div>
+  </div>
+  <!-- comming soon area start -->
+  
+  <!-- optional js -->
+  <script src="http://59.153.203.202/js/jquery.js"></script>
+  <script src="assets/js/vendors.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/function.js"></script>
+
+  <script>
+    
+  </script>
+  
+</html>
